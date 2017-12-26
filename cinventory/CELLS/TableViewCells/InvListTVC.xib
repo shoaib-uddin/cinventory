@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="InvListTVC" selectionStyle="default" indentationWidth="10" rowHeight="116" id="KGk-i7-Jjw" customClass="InvListTVC" customModule="cinventory" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="476" height="116"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="476" height="115.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ofC-jv-far">
+                        <rect key="frame" x="12" y="8" width="452" height="100"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="edit-ion@1x" translatesAutoresizingMaskIntoConstraints="NO" id="Hzb-Db-ewh">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Hzb-Db-ewh" secondAttribute="height" multiplier="0.5:1" id="etN-4s-e27"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ZCa-0L-dvp">
+                                <rect key="frame" x="70" y="0.0" width="382" height="100"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="D2016 Acura ILX 2.4L" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iEn-f9-Fuz">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="16.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
+                                        <color key="textColor" red="0.14901960780000001" green="0.3921568627" blue="0.5450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1234321" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TSd-n0-xqr">
+                                        <rect key="frame" x="0.0" y="16.5" width="382" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1,000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zzw-gT-rzf">
+                                        <rect key="frame" x="0.0" y="33.5" width="382" height="16.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vAk-Gf-drs">
+                                        <rect key="frame" x="0.0" y="50" width="382" height="16.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uiF-Ep-1b1">
+                                        <rect key="frame" x="0.0" y="66.5" width="382" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VIN Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QzG-YV-96w">
+                                        <rect key="frame" x="0.0" y="83.5" width="382" height="16.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZCa-0L-dvp" firstAttribute="leading" secondItem="Hzb-Db-ewh" secondAttribute="trailing" constant="20" id="0XY-lj-J8e"/>
+                            <constraint firstItem="ZCa-0L-dvp" firstAttribute="height" secondItem="Hzb-Db-ewh" secondAttribute="height" id="JFQ-m5-lBI"/>
+                            <constraint firstItem="ZCa-0L-dvp" firstAttribute="centerY" secondItem="Hzb-Db-ewh" secondAttribute="centerY" id="MBO-pS-HK0"/>
+                            <constraint firstItem="Hzb-Db-ewh" firstAttribute="centerY" secondItem="ofC-jv-far" secondAttribute="centerY" id="goa-Sz-fov"/>
+                            <constraint firstItem="Hzb-Db-ewh" firstAttribute="height" secondItem="ofC-jv-far" secondAttribute="height" id="l8u-8g-56a"/>
+                            <constraint firstAttribute="trailing" secondItem="ZCa-0L-dvp" secondAttribute="trailing" id="lmW-LV-BdE"/>
+                            <constraint firstItem="Hzb-Db-ewh" firstAttribute="leading" secondItem="ofC-jv-far" secondAttribute="leading" id="mHz-wN-OgG"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ofC-jv-far" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="PER-eF-wrX"/>
+                    <constraint firstItem="ofC-jv-far" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.95" id="RUd-Df-f44"/>
+                    <constraint firstItem="ofC-jv-far" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="aZN-9T-pnH"/>
+                    <constraint firstAttribute="bottom" secondItem="ofC-jv-far" secondAttribute="bottom" constant="8" id="wEN-QX-nAM"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outletCollection property="lblDataArray" destination="iEn-f9-Fuz" collectionClass="NSMutableArray" id="cvd-SM-yqJ"/>
+                <outletCollection property="lblDataArray" destination="TSd-n0-xqr" collectionClass="NSMutableArray" id="rrb-GI-A95"/>
+                <outletCollection property="lblDataArray" destination="Zzw-gT-rzf" collectionClass="NSMutableArray" id="TWy-Tb-g3m"/>
+                <outletCollection property="lblDataArray" destination="vAk-Gf-drs" collectionClass="NSMutableArray" id="qf8-z3-TRh"/>
+                <outletCollection property="lblDataArray" destination="uiF-Ep-1b1" collectionClass="NSMutableArray" id="bO7-u5-rWW"/>
+                <outletCollection property="lblDataArray" destination="QzG-YV-96w" collectionClass="NSMutableArray" id="Kt1-rA-HXz"/>
+            </connections>
+            <point key="canvasLocation" x="-53" y="-41"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="edit-ion@1x" width="27" height="27"/>
+    </resources>
+</document>
