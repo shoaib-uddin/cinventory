@@ -46,18 +46,18 @@ class InvPageVC: UIPageViewController {
         return destination;
     }
     
-    func updateInvLocalData(invListModel: InvListModel){
-        
-        print("in InvPageVC");
-        print(invListModel);
-        self.invListModel = invListModel;
-        
-        if let vc = orderedViewControllers[0] as? InvBasicVC {
-            vc.setData(invListModel: invListModel);
-        }
-        
-        
-    };
+//    func updateInvLocalData(invListModel: InvListModel){
+//        
+//        print("in InvPageVC");
+//        print(invListModel);
+//        self.invListModel = invListModel;
+//        
+//        if let vc = orderedViewControllers[0] as? InvBasicVC {
+//            vc.setData(invListModel: invListModel);
+//        }
+//        
+//        
+//    };
     
     
     

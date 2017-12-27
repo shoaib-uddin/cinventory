@@ -16,7 +16,7 @@ class InventoryVC: BaseViewController {
     @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var PartialViewCC: UIView!
-    
+    @IBOutlet weak var PartialScrollViewCC: UIScrollView!
     // variables
     var invListTVC: InvListTVC!;
     var invListModel: InvListModel!;
@@ -25,6 +25,8 @@ class InventoryVC: BaseViewController {
     var collectionArray: [[String:Any]] = [[ : ]];
     var selectedCellIndex: IndexPath! = IndexPath(row: 0, section: 0);
     var enInventoryBasicTab: EnInventoryBasicTab!;
+    var loggedInModel: LoggedInModel = UserModel.GetInfo();
+    
     
     // view controllers variables
     var invBasicVC: InvBasicVC!;

@@ -16,65 +16,97 @@ extension InventoryVC{
         switch index {
         case "BAS":
             
-            if(self.invBasicVC != nil){ return }
-            
+            if(self.invBasicVC != nil){
+                self.PartialViewCC.bringSubview(toFront: self.invBasicVC.view);
+                return
+                
+            }
             self.invBasicVC = sb.instantiateViewController(withIdentifier: "InvBasicVC") as! InvBasicVC
-            addControlerToView(controller: invBasicVC);
-            
+            Inventory.getInvBasicTabData(self.loggedInModel.MembershipId!, invId: Int(truncating: self.invListModel.id!), completion: { (success, basicTabData) in
+                //
+                print("DATA BASIC");
+                self.invBasicVC.setData(data: (basicTabData?.first)!);
+                self.addControlerToView(controller: self.invBasicVC);
+                
+            })
             
             break
         case "CST":
             
-            if(self.invCostVC != nil){ return }
+            if(self.invCostVC != nil){
+                self.PartialViewCC.bringSubview(toFront: self.invCostVC.view);
+                return
+            }
             invCostVC = sb.instantiateViewController(withIdentifier: "InvCostVC") as! InvCostVC
             addControlerToView(controller: invCostVC);
             
             break
         case "OPT":
             
-            if(self.invOptionsVC != nil){ return }
+            if(self.invOptionsVC != nil){
+                self.PartialViewCC.bringSubview(toFront: self.invOptionsVC.view);
+                return
+            }
             invOptionsVC = sb.instantiateViewController(withIdentifier: "InvOptionsVC") as! InvOptionsVC
             addControlerToView(controller: invOptionsVC);
             
             break
         case "VLU":
             
-            if(self.invValuationVC != nil){ return }
+            if(self.invValuationVC != nil){
+                self.PartialViewCC.bringSubview(toFront: self.invValuationVC.view);
+                return
+            }
             invValuationVC = sb.instantiateViewController(withIdentifier: "InvValuationVC") as! InvValuationVC
             addControlerToView(controller: invValuationVC);
             
             break
         case "CON":
             
-            if(self.invConditionVC != nil){ return }
+            if(self.invConditionVC != nil){
+                self.PartialViewCC.bringSubview(toFront: self.invConditionVC.view);
+                return
+            }
             invConditionVC = sb.instantiateViewController(withIdentifier: "InvConditionVC") as! InvConditionVC
             addControlerToView(controller: invConditionVC);
             
             break
         case "RPR":
             
-            if(self.invRepairVC != nil){ return }
+            if(self.invRepairVC != nil){
+                self.PartialViewCC.bringSubview(toFront: self.invRepairVC.view);
+                return
+            }
             invRepairVC = sb.instantiateViewController(withIdentifier: "InvRepairVC") as! InvRepairVC
             addControlerToView(controller: invRepairVC);
             
             break
         case "TIL":
             
-            if(self.invTitlesVC != nil){ return }
+            if(self.invTitlesVC != nil){
+                self.PartialViewCC.bringSubview(toFront: self.invTitlesVC.view);
+                return
+            }
             invTitlesVC = sb.instantiateViewController(withIdentifier: "InvTitlesVC") as! InvTitlesVC
             addControlerToView(controller: invTitlesVC);
             
             break
         case "PIC":
             
-            if(self.invPicturesVC != nil){ return }
+            if(self.invPicturesVC != nil){
+                self.PartialViewCC.bringSubview(toFront: self.invPicturesVC.view);
+                return
+            }
             invPicturesVC = sb.instantiateViewController(withIdentifier: "InvPicturesVC") as! InvPicturesVC
             addControlerToView(controller: invPicturesVC);
             
             break
         case "FIL":
             
-            if(self.invFilesVC != nil){ return }
+            if(self.invFilesVC != nil){
+                self.PartialViewCC.bringSubview(toFront: self.invFilesVC.view);
+                return
+            }
             invFilesVC = sb.instantiateViewController(withIdentifier: "InvFilesVC") as! InvFilesVC
             addControlerToView(controller: invFilesVC);
             

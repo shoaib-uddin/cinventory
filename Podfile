@@ -9,7 +9,7 @@ target 'cinventory' do
 
 pod 'Alamofire'
 pod 'AlamofireImage'
-pod 'EVReflection'
+pod 'EVReflection', '~>5.2.1'
 pod 'ReachabilitySwift'
 pod 'MBProgressHUD'
 pod 'LKAlertController'

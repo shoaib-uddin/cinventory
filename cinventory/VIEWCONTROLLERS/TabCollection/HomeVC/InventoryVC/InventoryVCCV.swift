@@ -112,7 +112,7 @@ extension InventoryVC: UICollectionViewDataSource, UICollectionViewDelegateFlowL
         
         
         let key = collection["KeyIndex"] as! String;
-        unloadView(index: collection["KeyIndex"] as! String , rejectChanges: rejectChanges)
+        //unloadView(index: collection["KeyIndex"] as! String , rejectChanges: rejectChanges)
     }
     
     
