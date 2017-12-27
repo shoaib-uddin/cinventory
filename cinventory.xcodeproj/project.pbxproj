@@ -89,6 +89,69 @@
 		0A83A9FF1FEE580E00CB72F5 /* HomeTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableVC.swift; sourceTree = "<group>"; };
 		0A83AA011FEE585500CB72F5 /* NotificationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationVC.swift; sourceTree = "<group>"; };
 		0A83AA031FEE58CA00CB72F5 /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
+		0A9E930C1FF433DB00CCDEB1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0A9E930D1FF433DB00CCDEB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0A9E930F1FF433DB00CCDEB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/EurekaSectionHeader.xib; sourceTree = "<group>"; };
+		0A9E93111FF433DB00CCDEB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0A9E93131FF433DB00CCDEB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0A9E93151FF433DB00CCDEB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/WeekDaysCell.xib; sourceTree = "<group>"; };
+		0A9E93161FF433DB00CCDEB1 /* CustomCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCells.swift; sourceTree = "<group>"; };
+		0A9E93181FF433DB00CCDEB1 /* DatePickerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DatePickerCell.xib; sourceTree = "<group>"; };
+		0A9E93191FF433DB00CCDEB1 /* SwitchCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SwitchCell.xib; sourceTree = "<group>"; };
+		0A9E931A1FF433DB00CCDEB1 /* TextCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextCell.xib; sourceTree = "<group>"; };
+		0A9E931D1FF433DB00CCDEB1 /* ImagePickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerController.swift; sourceTree = "<group>"; };
+		0A9E931E1FF433DB00CCDEB1 /* ImageRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRow.swift; sourceTree = "<group>"; };
+		0A9E93201FF433DB00CCDEB1 /* FloatLabelTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatLabelTextField.swift; sourceTree = "<group>"; };
+		0A9E93211FF433DB00CCDEB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A9E93221FF433DB00CCDEB1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0A9E93241FF433DB00CCDEB1 /* CatalogFieldRows.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = CatalogFieldRows.jpg; sourceTree = "<group>"; };
+		0A9E93251FF433DB00CCDEB1 /* EurekaAlertRow.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = EurekaAlertRow.gif; sourceTree = "<group>"; };
+		0A9E93261FF433DB00CCDEB1 /* EurekaCustomCellDisabled.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = EurekaCustomCellDisabled.gif; sourceTree = "<group>"; };
+		0A9E93271FF433DB00CCDEB1 /* EurekaCustomCells.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = EurekaCustomCells.gif; sourceTree = "<group>"; };
+		0A9E93281FF433DB00CCDEB1 /* EurekaCustomRow.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = EurekaCustomRow.gif; sourceTree = "<group>"; };
+		0A9E93291FF433DB00CCDEB1 /* EurekaExample1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = EurekaExample1.gif; sourceTree = "<group>"; };
+		0A9E932A1FF433DB00CCDEB1 /* EurekaExample2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = EurekaExample2.gif; sourceTree = "<group>"; };
+		0A9E932B1FF433DB00CCDEB1 /* EurekaExample3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = EurekaExample3.gif; sourceTree = "<group>"; };
+		0A9E932C1FF433DB00CCDEB1 /* EurekaHidden.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = EurekaHidden.gif; sourceTree = "<group>"; };
+		0A9E932D1FF433DB00CCDEB1 /* EurekaHowTo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = EurekaHowTo.gif; sourceTree = "<group>"; };
+		0A9E932E1FF433DB00CCDEB1 /* EurekaLocationRow.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = EurekaLocationRow.gif; sourceTree = "<group>"; };
+		0A9E932F1FF433DB00CCDEB1 /* EurekaMultivalued.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = EurekaMultivalued.gif; sourceTree = "<group>"; };
+		0A9E93301FF433DB00CCDEB1 /* EurekaNavigation.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = EurekaNavigation.gif; sourceTree = "<group>"; };
+		0A9E93311FF433DB00CCDEB1 /* EurekaOnChange.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = EurekaOnChange.gif; sourceTree = "<group>"; };
+		0A9E93321FF433DB00CCDEB1 /* EurekaRows.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = EurekaRows.gif; sourceTree = "<group>"; };
+		0A9E93331FF433DB00CCDEB1 /* EurekaSegmentedRow.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = EurekaSegmentedRow.gif; sourceTree = "<group>"; };
+		0A9E93341FF433DB00CCDEB1 /* EurekaSwitchSections.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = EurekaSwitchSections.gif; sourceTree = "<group>"; };
+		0A9E93361FF433DB00CCDEB1 /* EurekaCountDownInlineRow.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = EurekaCountDownInlineRow.gif; sourceTree = "<group>"; };
+		0A9E93371FF433DB00CCDEB1 /* EurekaCountDownPickerRow.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = EurekaCountDownPickerRow.gif; sourceTree = "<group>"; };
+		0A9E93381FF433DB00CCDEB1 /* EurekaCountDownRow.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = EurekaCountDownRow.gif; sourceTree = "<group>"; };
+		0A9E93391FF433DB00CCDEB1 /* EurekaDateInlineRow.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = EurekaDateInlineRow.gif; sourceTree = "<group>"; };
+		0A9E933A1FF433DB00CCDEB1 /* EurekaDatePickerRow.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = EurekaDatePickerRow.gif; sourceTree = "<group>"; };
+		0A9E933B1FF433DB00CCDEB1 /* EurekaDateRow.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = EurekaDateRow.gif; sourceTree = "<group>"; };
+		0A9E933C1FF433DB00CCDEB1 /* EurekaDateTimeInlineRow.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = EurekaDateTimeInlineRow.gif; sourceTree = "<group>"; };
+		0A9E933D1FF433DB00CCDEB1 /* EurekaDateTimePickerRow.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = EurekaDateTimePickerRow.gif; sourceTree = "<group>"; };
+		0A9E933E1FF433DB00CCDEB1 /* EurekaDateTimeRow.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = EurekaDateTimeRow.gif; sourceTree = "<group>"; };
+		0A9E933F1FF433DB00CCDEB1 /* EurekaTimeInlineRow.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = EurekaTimeInlineRow.gif; sourceTree = "<group>"; };
+		0A9E93401FF433DB00CCDEB1 /* EurekaTimePickerRow.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = EurekaTimePickerRow.gif; sourceTree = "<group>"; };
+		0A9E93411FF433DB00CCDEB1 /* EurekaTimeRow.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = EurekaTimeRow.gif; sourceTree = "<group>"; };
+		0A9E93431FF433DB00CCDEB1 /* ActionSheetRow.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ActionSheetRow.jpeg; sourceTree = "<group>"; };
+		0A9E93441FF433DB00CCDEB1 /* AlertRow.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = AlertRow.jpeg; sourceTree = "<group>"; };
+		0A9E93451FF433DB00CCDEB1 /* ButtonRow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ButtonRow.png; sourceTree = "<group>"; };
+		0A9E93461FF433DB00CCDEB1 /* CheckRow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CheckRow.png; sourceTree = "<group>"; };
+		0A9E93471FF433DB00CCDEB1 /* ImageRow.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ImageRow.jpeg; sourceTree = "<group>"; };
+		0A9E93481FF433DB00CCDEB1 /* LabelRow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LabelRow.png; sourceTree = "<group>"; };
+		0A9E93491FF433DB00CCDEB1 /* MultipleSelectorRow.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MultipleSelectorRow.jpeg; sourceTree = "<group>"; };
+		0A9E934A1FF433DB00CCDEB1 /* PickerRow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PickerRow.png; sourceTree = "<group>"; };
+		0A9E934B1FF433DB00CCDEB1 /* PictureRow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PictureRow.png; sourceTree = "<group>"; };
+		0A9E934C1FF433DB00CCDEB1 /* PostalAddressRow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PostalAddressRow.png; sourceTree = "<group>"; };
+		0A9E934D1FF433DB00CCDEB1 /* PushRow.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = PushRow.jpeg; sourceTree = "<group>"; };
+		0A9E934E1FF433DB00CCDEB1 /* SegmentedRow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SegmentedRow.png; sourceTree = "<group>"; };
+		0A9E934F1FF433DB00CCDEB1 /* SegmentedRowWithTitle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SegmentedRowWithTitle.png; sourceTree = "<group>"; };
+		0A9E93501FF433DB00CCDEB1 /* SliderRow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SliderRow.png; sourceTree = "<group>"; };
+		0A9E93511FF433DB00CCDEB1 /* StepperRow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StepperRow.png; sourceTree = "<group>"; };
+		0A9E93521FF433DB00CCDEB1 /* SwitchRow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SwitchRow.png; sourceTree = "<group>"; };
+		0A9E93531FF433DB00CCDEB1 /* TextAreaRow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TextAreaRow.png; sourceTree = "<group>"; };
+		0A9E93551FF433DB00CCDEB1 /* FieldRowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldRowUITests.swift; sourceTree = "<group>"; };
+		0A9E93561FF433DB00CCDEB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A9ECB6A1FEF902B00E1F0BF /* InvOptionsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvOptionsVC.swift; sourceTree = "<group>"; };
 		0A9ECB6C1FEF908C00E1F0BF /* InvValuationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvValuationVC.swift; sourceTree = "<group>"; };
 		0A9ECB6E1FEF910C00E1F0BF /* InvConditionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvConditionVC.swift; sourceTree = "<group>"; };
@@ -265,6 +328,148 @@
 			path = TableViewCells;
 			sourceTree = "<group>";
 		};
+		0A9E930A1FF433DB00CCDEB1 /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				0A9E930B1FF433DB00CCDEB1 /* Example */,
+				0A9E93231FF433DB00CCDEB1 /* Media */,
+				0A9E93541FF433DB00CCDEB1 /* UITests */,
+			);
+			path = Example;
+			sourceTree = "<group>";
+		};
+		0A9E930B1FF433DB00CCDEB1 /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				0A9E930C1FF433DB00CCDEB1 /* AppDelegate.swift */,
+				0A9E930D1FF433DB00CCDEB1 /* Assets.xcassets */,
+				0A9E930E1FF433DB00CCDEB1 /* EurekaSectionHeader.xib */,
+				0A9E93101FF433DB00CCDEB1 /* LaunchScreen.storyboard */,
+				0A9E93121FF433DB00CCDEB1 /* Main.storyboard */,
+				0A9E93141FF433DB00CCDEB1 /* WeekDaysCell.xib */,
+				0A9E93161FF433DB00CCDEB1 /* CustomCells.swift */,
+				0A9E93171FF433DB00CCDEB1 /* CustomDesign */,
+				0A9E931B1FF433DB00CCDEB1 /* CustomRows */,
+				0A9E931F1FF433DB00CCDEB1 /* Helpers */,
+				0A9E93211FF433DB00CCDEB1 /* Info.plist */,
+				0A9E93221FF433DB00CCDEB1 /* ViewController.swift */,
+			);
+			path = Example;
+			sourceTree = "<group>";
+		};
+		0A9E93171FF433DB00CCDEB1 /* CustomDesign */ = {
+			isa = PBXGroup;
+			children = (
+				0A9E93181FF433DB00CCDEB1 /* DatePickerCell.xib */,
+				0A9E93191FF433DB00CCDEB1 /* SwitchCell.xib */,
+				0A9E931A1FF433DB00CCDEB1 /* TextCell.xib */,
+			);
+			path = CustomDesign;
+			sourceTree = "<group>";
+		};
+		0A9E931B1FF433DB00CCDEB1 /* CustomRows */ = {
+			isa = PBXGroup;
+			children = (
+				0A9E931C1FF433DB00CCDEB1 /* ImageRow */,
+			);
+			path = CustomRows;
+			sourceTree = "<group>";
+		};
+		0A9E931C1FF433DB00CCDEB1 /* ImageRow */ = {
+			isa = PBXGroup;
+			children = (
+				0A9E931D1FF433DB00CCDEB1 /* ImagePickerController.swift */,
+				0A9E931E1FF433DB00CCDEB1 /* ImageRow.swift */,
+			);
+			path = ImageRow;
+			sourceTree = "<group>";
+		};
+		0A9E931F1FF433DB00CCDEB1 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				0A9E93201FF433DB00CCDEB1 /* FloatLabelTextField.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		0A9E93231FF433DB00CCDEB1 /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				0A9E93241FF433DB00CCDEB1 /* CatalogFieldRows.jpg */,
+				0A9E93251FF433DB00CCDEB1 /* EurekaAlertRow.gif */,
+				0A9E93261FF433DB00CCDEB1 /* EurekaCustomCellDisabled.gif */,
+				0A9E93271FF433DB00CCDEB1 /* EurekaCustomCells.gif */,
+				0A9E93281FF433DB00CCDEB1 /* EurekaCustomRow.gif */,
+				0A9E93291FF433DB00CCDEB1 /* EurekaExample1.gif */,
+				0A9E932A1FF433DB00CCDEB1 /* EurekaExample2.gif */,
+				0A9E932B1FF433DB00CCDEB1 /* EurekaExample3.gif */,
+				0A9E932C1FF433DB00CCDEB1 /* EurekaHidden.gif */,
+				0A9E932D1FF433DB00CCDEB1 /* EurekaHowTo.gif */,
+				0A9E932E1FF433DB00CCDEB1 /* EurekaLocationRow.gif */,
+				0A9E932F1FF433DB00CCDEB1 /* EurekaMultivalued.gif */,
+				0A9E93301FF433DB00CCDEB1 /* EurekaNavigation.gif */,
+				0A9E93311FF433DB00CCDEB1 /* EurekaOnChange.gif */,
+				0A9E93321FF433DB00CCDEB1 /* EurekaRows.gif */,
+				0A9E93331FF433DB00CCDEB1 /* EurekaSegmentedRow.gif */,
+				0A9E93341FF433DB00CCDEB1 /* EurekaSwitchSections.gif */,
+				0A9E93351FF433DB00CCDEB1 /* RowGifs */,
+				0A9E93421FF433DB00CCDEB1 /* RowStatics */,
+			);
+			path = Media;
+			sourceTree = "<group>";
+		};
+		0A9E93351FF433DB00CCDEB1 /* RowGifs */ = {
+			isa = PBXGroup;
+			children = (
+				0A9E93361FF433DB00CCDEB1 /* EurekaCountDownInlineRow.gif */,
+				0A9E93371FF433DB00CCDEB1 /* EurekaCountDownPickerRow.gif */,
+				0A9E93381FF433DB00CCDEB1 /* EurekaCountDownRow.gif */,
+				0A9E93391FF433DB00CCDEB1 /* EurekaDateInlineRow.gif */,
+				0A9E933A1FF433DB00CCDEB1 /* EurekaDatePickerRow.gif */,
+				0A9E933B1FF433DB00CCDEB1 /* EurekaDateRow.gif */,
+				0A9E933C1FF433DB00CCDEB1 /* EurekaDateTimeInlineRow.gif */,
+				0A9E933D1FF433DB00CCDEB1 /* EurekaDateTimePickerRow.gif */,
+				0A9E933E1FF433DB00CCDEB1 /* EurekaDateTimeRow.gif */,
+				0A9E933F1FF433DB00CCDEB1 /* EurekaTimeInlineRow.gif */,
+				0A9E93401FF433DB00CCDEB1 /* EurekaTimePickerRow.gif */,
+				0A9E93411FF433DB00CCDEB1 /* EurekaTimeRow.gif */,
+			);
+			path = RowGifs;
+			sourceTree = "<group>";
+		};
+		0A9E93421FF433DB00CCDEB1 /* RowStatics */ = {
+			isa = PBXGroup;
+			children = (
+				0A9E93431FF433DB00CCDEB1 /* ActionSheetRow.jpeg */,
+				0A9E93441FF433DB00CCDEB1 /* AlertRow.jpeg */,
+				0A9E93451FF433DB00CCDEB1 /* ButtonRow.png */,
+				0A9E93461FF433DB00CCDEB1 /* CheckRow.png */,
+				0A9E93471FF433DB00CCDEB1 /* ImageRow.jpeg */,
+				0A9E93481FF433DB00CCDEB1 /* LabelRow.png */,
+				0A9E93491FF433DB00CCDEB1 /* MultipleSelectorRow.jpeg */,
+				0A9E934A1FF433DB00CCDEB1 /* PickerRow.png */,
+				0A9E934B1FF433DB00CCDEB1 /* PictureRow.png */,
+				0A9E934C1FF433DB00CCDEB1 /* PostalAddressRow.png */,
+				0A9E934D1FF433DB00CCDEB1 /* PushRow.jpeg */,
+				0A9E934E1FF433DB00CCDEB1 /* SegmentedRow.png */,
+				0A9E934F1FF433DB00CCDEB1 /* SegmentedRowWithTitle.png */,
+				0A9E93501FF433DB00CCDEB1 /* SliderRow.png */,
+				0A9E93511FF433DB00CCDEB1 /* StepperRow.png */,
+				0A9E93521FF433DB00CCDEB1 /* SwitchRow.png */,
+				0A9E93531FF433DB00CCDEB1 /* TextAreaRow.png */,
+			);
+			path = RowStatics;
+			sourceTree = "<group>";
+		};
+		0A9E93541FF433DB00CCDEB1 /* UITests */ = {
+			isa = PBXGroup;
+			children = (
+				0A9E93551FF433DB00CCDEB1 /* FieldRowUITests.swift */,
+				0A9E93561FF433DB00CCDEB1 /* Info.plist */,
+			);
+			path = UITests;
+			sourceTree = "<group>";
+		};
 		0AB16C191FED8C48000124F5 = {
 			isa = PBXGroup;
 			children = (
@@ -286,6 +491,7 @@
 		0AB16C241FED8C48000124F5 /* cinventory */ = {
 			isa = PBXGroup;
 			children = (
+				0A9E930A1FF433DB00CCDEB1 /* Example */,
 				0AB16C481FED98E6000124F5 /* REUSEABLES */,
 				0AB16C371FED9558000124F5 /* VIEWCONTROLLERS */,
 				0A83AA051FEE724300CB72F5 /* CELLS */,
@@ -599,6 +805,38 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		0A9E930E1FF433DB00CCDEB1 /* EurekaSectionHeader.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A9E930F1FF433DB00CCDEB1 /* Base */,
+			);
+			name = EurekaSectionHeader.xib;
+			sourceTree = "<group>";
+		};
+		0A9E93101FF433DB00CCDEB1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A9E93111FF433DB00CCDEB1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		0A9E93121FF433DB00CCDEB1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A9E93131FF433DB00CCDEB1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0A9E93141FF433DB00CCDEB1 /* WeekDaysCell.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A9E93151FF433DB00CCDEB1 /* Base */,
+			);
+			name = WeekDaysCell.xib;
+			sourceTree = "<group>";
+		};
 		0AB16C291FED8C48000124F5 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
