@@ -16,88 +16,7 @@ class InvBasicVC: FormViewController {
     // IBOutlets
     
     
-    // variables
-    var Id: NSNumber?
     
-    
-    
-    
-    var VehicleSourceId: NSNumber!
-    var VehicleSource: [Vendor] = [Vendor]()
-    
-    
-    
-    
-    
-    
-    var Buyers: [Vendor] = [Vendor]()
-    
-    
-    
-    var OdoScale: Bool? = false
-    
-    var EmissionDone: Bool? = false
-    
-    
-    
-    var EmissionDate: String? = ""
-    
-    
-    
-    
-    
-    
-    var : [InventoryDropdowns] = [InventoryDropdowns]()
-    var RoofColor: [InventoryDropdowns] = [InventoryDropdowns]()
-    var : [InventoryDropdowns] = [InventoryDropdowns]()
-    
-    
-    
-  
-    
-    
-    
-    var : String? = ""
-    var : [InventoryDropdowns] = [InventoryDropdowns]()
-    
-    
-    
-    var : [InventoryDropdowns] = [InventoryDropdowns]()
-    var : [InventoryDropdowns] = [InventoryDropdowns]()
-    var : [InventoryDropdowns] = [InventoryDropdowns]()
-    
-    var AvailablityId: NSNumber!
-    var AvailabilityStatus: [InventoryDropdowns] = [InventoryDropdowns]()
-    
-    var : [InventoryDropdowns] = [InventoryDropdowns]()
-    var RoofDetail: [InventoryDropdowns] = [InventoryDropdowns]()
-    var EmissionType: [InventoryDropdowns] = [InventoryDropdowns]()
-    var EmissionStates: [InventoryDropdowns] = [InventoryDropdowns]()
-    
-    var BodyFamilyId: NSNumber!
-    var : [InventoryDropdowns] = [InventoryDropdowns]()
-    var EmissionTypeId: NSNumber!
-    
-    
-    var BuyerId: NSNumber!
-    var BuyerIsVendor: Bool? = false
-    var BuyNotes: String? = ""
-    
-    var : NSNumber!
-    
-    var : NSNumber!
-    
-    var : NSNumber!
-    
-    var : NSNumber!
-    
-    var RoofColorId: NSNumber!
-    
-    var StoreId: NSNumber!
-    
-    var RoofDetailId: NSNumber!
-    
-    var : NSNumber!
     
     override func viewDidLoad() {
         //
@@ -129,6 +48,16 @@ class InvBasicVC: FormViewController {
         for item in obj {
             if(Int(truncating: item.Id!) == Int(truncating: id)){
                 return item.Street!
+            }
+        }
+        
+        return "";
+    }
+    
+    func returnNameOfDropdown(obj: [Vendor], id: NSNumber) -> String?{
+        for item in obj {
+            if(Int(truncating: item.Id!) == Int(truncating: id)){
+                return item.FirstName!
             }
         }
         
@@ -305,7 +234,7 @@ class InvBasicVC: FormViewController {
             
             <<< PushRow<String>() {
                 $0.title = "Vehicle Source"
-                $0.options = data.VehicleSource.map { $0.Name! }
+                $0.options = data.VehicleSource.map { $0.FirstName! }
                 $0.value = returnNameOfDropdown(obj: data.VehicleSource, id: data.VehicleSourceId)
                 $0.selectorTitle = "Choose Vehicle Source"
                 }.onPresent { from, to in
@@ -317,187 +246,84 @@ class InvBasicVC: FormViewController {
             
             +++ Section()
             
-            
-            <<< TextRow() { $0.title = "Make";  $0.value = "\(data.Make!)" }
-            <<< TextRow() { $0.title = "Model"; $0.value = "\(data.Model!)" }
-            <<< TextRow() { $0.title = "VIN";   $0.value = "\(data.Vin!)" }
-            
-            <<< IntRow() { $0.title = "Miles"; $0.value = Int(truncating: data.MilesIn) }
             <<< SwitchRow() { $0.title = "Miles Exempt" ; $0.value = data.MilesExempt }
-            
-            
-        
-            // Date Row is pending
-            <<< DateRow() { $0.title = "Year";  $0.value = Date() }
-            
-            
-            
-            
-            
-            
-            
-            <<< SwitchRow() { $0.title = "Is Sunroof" ; $0.value = data.SunRoof }
-            <<< SwitchRow() { $0.title = "Is Luxury" ; $0.value = data.IsLuxury }
-           
-            
-            
-            
-            <<< LabelRow () {
-                $0.title = "\(data.Make!)"
-                $0.value = "tap the row"
-                }
-                .onCellSelection { cell, row in
-                    row.title = (row.title ?? "") + " 🇺🇾 "
-                    row.reload() // or row.updateCell()
-            }
-            
-            
-            
-            
-            <<< CheckRow() {
-                $0.title = "CheckRow"
-                $0.value = true
-            }
-            
-            <<< SwitchRow() {
-                $0.title = "SwitchRow"
-                $0.value = true
-            }
-            
-            <<< SliderRow() {
-                $0.title = "SliderRow"
-                $0.value = 5.0
-            }
-            
-            <<< StepperRow() {
-                $0.title = "StepperRow"
-                $0.value = 1.0
-            }
-            
-            +++ Section("SegmentedRow examples")
-            
-            <<< SegmentedRow<String>() { $0.options = ["One", "Two", "Three"] }
-            
-            
-            
-            <<< SegmentedRow<String>(){
-                $0.title = "SegmentedRow"
-                $0.options = ["One", "Two"]
-                }.cellSetup { cell, row in
-                    cell.imageView?.image = UIImage(named: "plus_image")
-            }
-            
-            <<< SegmentedRow<String>(){
-                $0.options = ["One", "Two", "Three", "Four"]
-                $0.value = "Three"
-                }.cellSetup { cell, row in
-                    cell.imageView?.image = UIImage(named: "plus_image")
-            }
-            
-            
-            
-            +++ Section("Selectors Rows Examples")
-            
+            <<< IntRow() { $0.title = "Miles"; $0.value = Int(truncating: data.MilesIn) }
             <<< ActionSheetRow<String>() {
-                $0.title = "ActionSheetRow"
-                $0.selectorTitle = "Your favourite player?"
-                $0.options = ["Diego Forlán", "Edinson Cavani", "Diego Lugano", "Luis Suarez"]
-                $0.value = "Luis Suarez"
+                $0.title = "Measures In"
+                $0.selectorTitle = "Condition Measures In"
+                $0.options = ["Miles", "KM"]
+                $0.value = (data.OdoScale)! ? "Miles" : "KM"
                 }
                 .onPresent { from, to in
                     to.popoverPresentationController?.permittedArrowDirections = .up
-        }
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        form +++ Section("Generic picker")
+                }
             
-            <<< PickerRow<String>("Picker Row") { (row : PickerRow<String>) -> Void in
+            +++ Section()
+            
+            <<< SwitchRow() { $0.title = "Is Sunroof" ; $0.value = data.SunRoof }
+            
+            <<< PushRow<String>() {
+                $0.title = "Roof Details"
+                $0.options = data.RoofDetail.map { $0.Name! }
+                $0.value = returnNameOfDropdown(obj: data.RoofDetail, id: data.RoofDetailId)
+                $0.selectorTitle = "Choose Roof Color"
+                }.onPresent { from, to in
+                    to.dismissOnSelection = true
+                    to.dismissOnChange = true
+                }
+            
+            <<< PushRow<String>() {
+                $0.title = "Roof Color"
+                $0.options = data.RoofColor.map { $0.Name! }
+                $0.value = returnNameOfDropdown(obj: data.RoofColor, id: data.RoofColorId)
+                $0.selectorTitle = "Choose Roof Color"
+                }.onPresent { from, to in
+                    to.dismissOnSelection = true
+                    to.dismissOnChange = true
+                }
+            
+            +++ Section()
+            
+            <<< SwitchRow() { $0.title = "Is Emission Done" ; $0.value = data.EmissionDone }
+            
+            // Dates needs to be done
+            <<< DateRow() { $0.title = "Emission Date";  $0.value = Date() }
+            
+            <<< PushRow<String>() {
+                $0.title = "Emission State"
+                $0.options = data.EmissionStates.map { $0.Name! }
+                $0.value = returnNameOfDropdown(obj: data.EmissionStates, id: 0)
+                $0.selectorTitle = "Choose Emission State"
+                }.onPresent { from, to in
+                    to.dismissOnSelection = true
+                    to.dismissOnChange = true
+                }
+            
+            +++ Section()
+            
+            <<< ActionSheetRow<String>() {
+                $0.title = "Buyer"
+                $0.selectorTitle = "Condition Buyer"
+                $0.options = ["Vendor", "Employee"]
+                $0.value = (data.BuyerIsVendor)! ? "Vendor" : "Employee"
+                }
+                .onPresent { from, to in
+                    to.popoverPresentationController?.permittedArrowDirections = .up
+                }
+            
+            <<< PushRow<String>() {
+                $0.title = "Buyer Name"
+                $0.options = data.Buyers.map { $0.FirstName! }
+                $0.value = returnNameOfDropdown(obj: data.Buyers, id: data.BuyerId)
+                $0.selectorTitle = "Choose Buyer Name"
+                }.onPresent { from, to in
+                    to.dismissOnSelection = true
+                    to.dismissOnChange = true
+                }
+            
+            <<< TextRow() { $0.title = "Buyer Notes";  $0.value = "\(data.BuyNotes!)" }
                 
-                row.options = []
-                for i in 1...10{
-                    row.options.append("option \(i)")
-                }
-            }
-            
-            <<< PickerInputRow<String>("Picker Input Row"){
-                $0.title = "Options"
-                $0.options = []
-                for i in 1...10{
-                    $0.options.append("option \(i)")
-                }
-                $0.value = $0.options.first
-            }
-            
-            +++ Section("FieldRow examples")
-            
-            <<< TextRow() {
-                $0.title = "TextRow"
-                $0.placeholder = "Placeholder"
-            }
-            
-            <<< DecimalRow() {
-                $0.title = "DecimalRow"
-                $0.value = 5
-                $0.formatter = DecimalFormatter()
-                $0.useFormatterDuringInput = true
-                //$0.useFormatterOnDidBeginEditing = true
-                }.cellSetup { cell, _  in
-                    cell.textField.keyboardType = .numberPad
-            }
-            
-            <<< URLRow() {
-                $0.title = "URLRow"
-                $0.value = URL(string: "http://xmartlabs.com")
-            }
-            
-            <<< PhoneRow() {
-                $0.title = "PhoneRow (disabled)"
-                $0.value = "+598 9898983510"
-                $0.disabled = true
-            }
-            
-            <<< NameRow() {
-                $0.title =  "NameRow"
-            }
-            
-            <<< PasswordRow() {
-                $0.title = "PasswordRow"
-                $0.value = "password"
-            }
-            
-            <<< IntRow() {
-                $0.title = "IntRow"
-                $0.value = 2015
-            }
-            
-            <<< EmailRow() {
-                $0.title = "EmailRow"
-                $0.value = "a@b.com"
-            }
-            
-            <<< TwitterRow() {
-                $0.title = "TwitterRow"
-                $0.value = "@xmartlabs"
-            }
-            
-            <<< AccountRow() {
-                $0.title = "AccountRow"
-                $0.placeholder = "Placeholder"
-            }
-            
-            <<< ZipCodeRow() {
-                $0.title = "ZipCodeRow"
-                $0.placeholder = "90210"
-        }
+        
         
     }
     
