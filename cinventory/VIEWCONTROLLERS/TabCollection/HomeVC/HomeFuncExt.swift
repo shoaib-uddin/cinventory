@@ -19,7 +19,12 @@ extension HomeTableVC : UISearchResultsUpdating{
         
         // initialize top header buttons - sidemenu - select and ImageDropdown
         let btnRight = UIBarButtonItem.init(title: "Signout", style: .plain, target: self, action: #selector(self.Signout(_:)));
-        self.navigationItem.rightBarButtonItems = [ btnRight ]
+        
+        let scanButtonImage = UIImage(named: "inventory-qrcode-navigation.png");
+        let btnQrCode = UIBarButtonItem.init(image: scanButtonImage, style: .plain, target: self, action: #selector(self.scanInventoryByQrCode(_:)));
+        btnQrCode.tintColor = UIColor.white;
+        
+        self.navigationItem.rightBarButtonItems = [ btnQrCode , btnRight ]
         
     }
     
@@ -29,6 +34,15 @@ extension HomeTableVC : UISearchResultsUpdating{
         
         UserModel.setLoggedOutUser();
         PageRedirect.redirectToLogin(view: self);
+        
+        
+    }
+    
+    // call from right most header button
+    @objc func scanInventoryByQrCode(_ sender: UIBarButtonItem){
+        // open selection of multiphoto select
+        
+        print("QR");
         
         
     }
