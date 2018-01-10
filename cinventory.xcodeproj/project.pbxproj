@@ -12,6 +12,8 @@
 		0A2AE57B1FEF0D41000D0C1E /* InvBasicVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2AE57A1FEF0D41000D0C1E /* InvBasicVC.swift */; };
 		0A2AE57D1FEF0D5D000D0C1E /* InvCostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2AE57C1FEF0D5D000D0C1E /* InvCostVC.swift */; };
 		0A2AE57F1FEF0F2A000D0C1E /* InvPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2AE57E1FEF0F2A000D0C1E /* InvPageVC.swift */; };
+		0A61DA511FF6E57700452352 /* CameraCaptureVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A61DA501FF6E57700452352 /* CameraCaptureVC.swift */; };
+		0A61DA531FF7A72100452352 /* QRScannerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A61DA521FF7A72100452352 /* QRScannerController.swift */; };
 		0A6CD2A51FEE765A00505C2F /* InvListTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6CD2A31FEE765A00505C2F /* InvListTVC.swift */; };
 		0A6CD2A61FEE765A00505C2F /* InvListTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A6CD2A41FEE765A00505C2F /* InvListTVC.xib */; };
 		0A6CD2A81FEE854400505C2F /* HomeTableExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6CD2A71FEE854400505C2F /* HomeTableExt.swift */; };
@@ -70,6 +72,8 @@
 		0A2AE57A1FEF0D41000D0C1E /* InvBasicVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvBasicVC.swift; sourceTree = "<group>"; };
 		0A2AE57C1FEF0D5D000D0C1E /* InvCostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvCostVC.swift; sourceTree = "<group>"; };
 		0A2AE57E1FEF0F2A000D0C1E /* InvPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvPageVC.swift; sourceTree = "<group>"; };
+		0A61DA501FF6E57700452352 /* CameraCaptureVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraCaptureVC.swift; sourceTree = "<group>"; };
+		0A61DA521FF7A72100452352 /* QRScannerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScannerController.swift; sourceTree = "<group>"; };
 		0A6CD2A31FEE765A00505C2F /* InvListTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvListTVC.swift; sourceTree = "<group>"; };
 		0A6CD2A41FEE765A00505C2F /* InvListTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InvListTVC.xib; sourceTree = "<group>"; };
 		0A6CD2A71FEE854400505C2F /* HomeTableExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableExt.swift; sourceTree = "<group>"; };
@@ -278,6 +282,7 @@
 				0A83A9FF1FEE580E00CB72F5 /* HomeTableVC.swift */,
 				0A6CD2A71FEE854400505C2F /* HomeTableExt.swift */,
 				0A6CD2AA1FEEC9F600505C2F /* HomeFuncExt.swift */,
+				0A9E935B1FF6D9DC00CCDEB1 /* QRVC */,
 				0A6CD2AC1FEED2A700505C2F /* InventoryVC */,
 			);
 			path = HomeVC;
@@ -474,6 +479,15 @@
 				0A9E93561FF433DB00CCDEB1 /* Info.plist */,
 			);
 			path = UITests;
+			sourceTree = "<group>";
+		};
+		0A9E935B1FF6D9DC00CCDEB1 /* QRVC */ = {
+			isa = PBXGroup;
+			children = (
+				0A61DA501FF6E57700452352 /* CameraCaptureVC.swift */,
+				0A61DA521FF7A72100452352 /* QRScannerController.swift */,
+			);
+			path = QRVC;
 			sourceTree = "<group>";
 		};
 		0AB16C191FED8C48000124F5 = {
@@ -770,6 +784,7 @@
 				0A83AA041FEE58CA00CB72F5 /* SettingsVC.swift in Sources */,
 				0AB16C4F1FEDA023000124F5 /* UtilityHelper.swift in Sources */,
 				0A83AA021FEE585500CB72F5 /* NotificationVC.swift in Sources */,
+				0A61DA511FF6E57700452352 /* CameraCaptureVC.swift in Sources */,
 				0A7345431FEDC1D700FF4F1C /* StyleHelper.swift in Sources */,
 				0A7345411FEDBC0C00FF4F1C /* ExtensionHelper.swift in Sources */,
 				0A2AE57D1FEF0D5D000D0C1E /* InvCostVC.swift in Sources */,
@@ -795,6 +810,7 @@
 				0AB16C471FED97A1000124F5 /* LoginVC.swift in Sources */,
 				0A6CD2BA1FEEEE8100505C2F /* StyleHelper2.swift in Sources */,
 				0AC3B48D1FF028C000AE54C0 /* RowSelectionVC.swift in Sources */,
+				0A61DA531FF7A72100452352 /* QRScannerController.swift in Sources */,
 				0AB16C5C1FEDA8B8000124F5 /* AppModel.swift in Sources */,
 				0AB16C521FEDA358000124F5 /* InventoryApi.swift in Sources */,
 				0A6CD2AE1FEED2B600505C2F /* InventoryVC.swift in Sources */,

@@ -85,6 +85,28 @@ class Inventory{
         
     }
     
+    class func getVinInfoData(_ membershipId: String, vin: Int, completion: @escaping (_ callback: Bool, _ data: [EnInventoryBasicTab]?) -> Void){
+        
+        // Post Model Create
+        let post = "membershipId=\(membershipId)&vin=\(vin)";
+        var response : [EnInventoryBasicTab] = [EnInventoryBasicTab]();
+        //Network Request
+        NetworkHelper.MakePostRequest("DecodeVin?\(post)", postData: nil, showLoader: true, success: { (successData) -> Void in
+            
+            response.removeAll();
+            response = [EnInventoryBasicTab](json: successData as? String);
+            completion(true, response);
+            
+            
+        },failure: { (error) -> Void in
+            print(error?.localizedDescription ?? "ERROR");
+            completion(false, response);
+            
+        })
+        
+        
+    }
+    
     
     
 }

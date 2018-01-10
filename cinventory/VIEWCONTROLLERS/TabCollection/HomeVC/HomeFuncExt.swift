@@ -41,9 +41,11 @@ extension HomeTableVC : UISearchResultsUpdating{
     // call from right most header button
     @objc func scanInventoryByQrCode(_ sender: UIBarButtonItem){
         // open selection of multiphoto select
-        
-        print("QR");
-        
+        if(self.invListModel.count == 0){
+            UtilityHelper.AlertMessage("Please wait or load inventory list first");
+        }else{
+            PageRedirect.gotoCameraPreview(viewController: self, invListModel: self.invListModel);
+        }
         
     }
     
@@ -57,7 +59,8 @@ extension HomeTableVC : UISearchResultsUpdating{
                 // filter by actual location || model || stock No
                 let flag = ( (list.actualLocation?.lowercased().contains(searchText.lowercased()))! ||
                              (list.model?.lowercased().contains(searchText.lowercased()))! ||
-                             (list.stockNo?.lowercased().contains(searchText.lowercased()))!
+                             (list.stockNo?.lowercased().contains(searchText.lowercased()))! ||
+                             (list.vin?.lowercased().contains(searchText.lowercased()))! 
                            )
                 
                 return flag
