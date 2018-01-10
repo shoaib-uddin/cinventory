@@ -222,15 +222,15 @@ class InvBasicVC: FormViewController {
                     to.dismissOnChange = true
                 }
             
-            <<< PushRow<String>() {
-                $0.title = "Unibody Code"
-                $0.options = data.UniCode.map { $0.Name! }
-                $0.value = returnNameOfDropdown(obj: data.UniCode, id: data.UniCodeId)
-                $0.selectorTitle = "Choose Unibody Code"
-                }.onPresent { from, to in
-                    to.dismissOnSelection = true
-                    to.dismissOnChange = true
-                }
+//            <<< PushRow<String>() {
+//                $0.title = "Unibody Code"
+//                $0.options = data.UniCode.map { $0.Name! }
+//                $0.value = returnNameOfDropdown(obj: data.UniCode, id: data.UniCodeId)
+//                $0.selectorTitle = "Choose Unibody Code"
+//                }.onPresent { from, to in
+//                    to.dismissOnSelection = true
+//                    to.dismissOnChange = true
+//                }
             
             <<< PushRow<String>() {
                 $0.title = "Vehicle Source"

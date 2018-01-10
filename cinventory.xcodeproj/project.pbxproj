@@ -60,6 +60,12 @@
 		0AC3B4911FF192C800AE54C0 /* InventoryVCinit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC3B4901FF192C800AE54C0 /* InventoryVCinit.swift */; };
 		0AC3B4931FF193E000AE54C0 /* InventoryVCViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC3B4921FF193E000AE54C0 /* InventoryVCViews.swift */; };
 		1675D57BC1F6489DD95FF858 /* Pods_cinventory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7504EAFB96A4FA922E841177 /* Pods_cinventory.framework */; };
+		5A5703101FF625A4005764C4 /* QRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A57030E1FF625A3005764C4 /* QRCodeViewController.swift */; };
+		5A5703111FF625A4005764C4 /* QRScannerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A57030F1FF625A4005764C4 /* QRScannerController.swift */; };
+		5AA9B47520060F0B0072B052 /* CustomCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA9B47420060F0B0072B052 /* CustomCells.swift */; };
+		5AA9B47820060FD60072B052 /* FloatLabelTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA9B47720060FD60072B052 /* FloatLabelTextField.swift */; };
+		5AA9B47D20061B2A0072B052 /* invOptionsExteriorChecklist.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5AA9B47B20061B2A0072B052 /* invOptionsExteriorChecklist.plist */; };
+		5AA9B47E20061B2A0072B052 /* invOptionsGeneralChecklist.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5AA9B47C20061B2A0072B052 /* invOptionsGeneralChecklist.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -180,6 +186,12 @@
 		0AC3B48E1FF1927000AE54C0 /* InventoryVCCV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryVCCV.swift; sourceTree = "<group>"; };
 		0AC3B4901FF192C800AE54C0 /* InventoryVCinit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryVCinit.swift; sourceTree = "<group>"; };
 		0AC3B4921FF193E000AE54C0 /* InventoryVCViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryVCViews.swift; sourceTree = "<group>"; };
+		5A57030E1FF625A3005764C4 /* QRCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeViewController.swift; sourceTree = "<group>"; };
+		5A57030F1FF625A4005764C4 /* QRScannerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRScannerController.swift; sourceTree = "<group>"; };
+		5AA9B47420060F0B0072B052 /* CustomCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCells.swift; sourceTree = "<group>"; };
+		5AA9B47720060FD60072B052 /* FloatLabelTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatLabelTextField.swift; sourceTree = "<group>"; };
+		5AA9B47B20061B2A0072B052 /* invOptionsExteriorChecklist.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = invOptionsExteriorChecklist.plist; sourceTree = "<group>"; };
+		5AA9B47C20061B2A0072B052 /* invOptionsGeneralChecklist.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = invOptionsGeneralChecklist.plist; sourceTree = "<group>"; };
 		5EEA1B543BCCF00626F76D2A /* Pods-cinventory.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cinventory.debug.xcconfig"; path = "Pods/Target Support Files/Pods-cinventory/Pods-cinventory.debug.xcconfig"; sourceTree = "<group>"; };
 		7504EAFB96A4FA922E841177 /* Pods_cinventory.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cinventory.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		97E7350DE5E0A48DE745AC61 /* Pods-cinventory.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cinventory.release.xcconfig"; path = "Pods/Target Support Files/Pods-cinventory/Pods-cinventory.release.xcconfig"; sourceTree = "<group>"; };
@@ -495,9 +507,12 @@
 				0AB16C481FED98E6000124F5 /* REUSEABLES */,
 				0AB16C371FED9558000124F5 /* VIEWCONTROLLERS */,
 				0A83AA051FEE724300CB72F5 /* CELLS */,
+				5AA9B47620060FC10072B052 /* EUREKA */,
 				0A2AE5731FEF00E0000D0C1E /* SUBVIEWS */,
 				0AB16C251FED8C48000124F5 /* AppDelegate.swift */,
 				0AB16C271FED8C48000124F5 /* ViewController.swift */,
+				5A57030E1FF625A3005764C4 /* QRCodeViewController.swift */,
+				5A57030F1FF625A4005764C4 /* QRScannerController.swift */,
 				0AB16C291FED8C48000124F5 /* Main.storyboard */,
 				0AB16C2C1FED8C48000124F5 /* Assets.xcassets */,
 				0AB16C2E1FED8C48000124F5 /* LaunchScreen.storyboard */,
@@ -570,6 +585,8 @@
 			isa = PBXGroup;
 			children = (
 				0AB16C561FEDA50A000124F5 /* Constants.swift */,
+				5AA9B47C20061B2A0072B052 /* invOptionsGeneralChecklist.plist */,
+				5AA9B47B20061B2A0072B052 /* invOptionsExteriorChecklist.plist */,
 				0A6CD2AF1FEEDFC000505C2F /* invItems.plist */,
 			);
 			path = CONSTANTS;
@@ -595,6 +612,15 @@
 				7504EAFB96A4FA922E841177 /* Pods_cinventory.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5AA9B47620060FC10072B052 /* EUREKA */ = {
+			isa = PBXGroup;
+			children = (
+				5AA9B47420060F0B0072B052 /* CustomCells.swift */,
+				5AA9B47720060FD60072B052 /* FloatLabelTextField.swift */,
+			);
+			path = EUREKA;
 			sourceTree = "<group>";
 		};
 		81432469EC6817A6F3E5CFB4 /* Pods */ = {
@@ -670,10 +696,12 @@
 			files = (
 				0A2AE5761FEF0113000D0C1E /* BasicSubview.xib in Resources */,
 				0A6CD2BD1FEEF3E400505C2F /* invItems.plist in Resources */,
+				5AA9B47E20061B2A0072B052 /* invOptionsGeneralChecklist.plist in Resources */,
 				0AB16C301FED8C48000124F5 /* LaunchScreen.storyboard in Resources */,
 				0A6CD2B51FEEE94E00505C2F /* IconCVC.xib in Resources */,
 				0A6CD2A61FEE765A00505C2F /* InvListTVC.xib in Resources */,
 				0AB16C2D1FED8C48000124F5 /* Assets.xcassets in Resources */,
+				5AA9B47D20061B2A0072B052 /* invOptionsExteriorChecklist.plist in Resources */,
 				0AB16C2B1FED8C48000124F5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -764,12 +792,15 @@
 				0AB16C4F1FEDA023000124F5 /* UtilityHelper.swift in Sources */,
 				0A83AA021FEE585500CB72F5 /* NotificationVC.swift in Sources */,
 				0A7345431FEDC1D700FF4F1C /* StyleHelper.swift in Sources */,
+				5AA9B47520060F0B0072B052 /* CustomCells.swift in Sources */,
 				0A7345411FEDBC0C00FF4F1C /* ExtensionHelper.swift in Sources */,
 				0A2AE57D1FEF0D5D000D0C1E /* InvCostVC.swift in Sources */,
 				0A6CD2A51FEE765A00505C2F /* InvListTVC.swift in Sources */,
 				0A6CD2AB1FEEC9F600505C2F /* HomeFuncExt.swift in Sources */,
 				0A9ECB6D1FEF908C00E1F0BF /* InvValuationVC.swift in Sources */,
 				0A6CD2A81FEE854400505C2F /* HomeTableExt.swift in Sources */,
+				5A5703111FF625A4005764C4 /* QRScannerController.swift in Sources */,
+				5AA9B47820060FD60072B052 /* FloatLabelTextField.swift in Sources */,
 				0AB16C541FEDA438000124F5 /* NetworkHelper.swift in Sources */,
 				0A83A9F61FEE51F500CB72F5 /* BaseVC.swift in Sources */,
 				0A2AE5781FEF013B000D0C1E /* BasicSubview.swift in Sources */,
@@ -784,6 +815,7 @@
 				0A2AE57F1FEF0F2A000D0C1E /* InvPageVC.swift in Sources */,
 				0AB16C571FEDA50A000124F5 /* Constants.swift in Sources */,
 				0A2AE57B1FEF0D41000D0C1E /* InvBasicVC.swift in Sources */,
+				5A5703101FF625A4005764C4 /* QRCodeViewController.swift in Sources */,
 				0AB16C471FED97A1000124F5 /* LoginVC.swift in Sources */,
 				0A6CD2BA1FEEEE8100505C2F /* StyleHelper2.swift in Sources */,
 				0AC3B48D1FF028C000AE54C0 /* RowSelectionVC.swift in Sources */,
