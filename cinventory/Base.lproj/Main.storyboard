@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Cq3-7e-RTm">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WmX-Vx-X6P">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -594,25 +594,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Options View Comming soon" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eNZ-a0-MVu">
-                                <rect key="frame" x="0.0" y="331.5" width="375" height="24"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="AEK-WZ-8Dq">
+                                <rect key="frame" x="-0.5" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" red="0.78780764250000002" green="0.78780764250000002" blue="0.78780764250000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="eNZ-a0-MVu" firstAttribute="centerY" secondItem="ExR-w6-qUL" secondAttribute="centerY" id="gGg-Yd-uX9"/>
-                            <constraint firstItem="eNZ-a0-MVu" firstAttribute="width" secondItem="luq-EV-4tK" secondAttribute="width" id="gK4-UO-A62"/>
-                            <constraint firstItem="eNZ-a0-MVu" firstAttribute="centerX" secondItem="ExR-w6-qUL" secondAttribute="centerX" id="qCb-O6-8tv"/>
+                            <constraint firstItem="AEK-WZ-8Dq" firstAttribute="width" secondItem="ExR-w6-qUL" secondAttribute="width" id="4CL-We-FSt"/>
+                            <constraint firstItem="AEK-WZ-8Dq" firstAttribute="centerY" secondItem="ExR-w6-qUL" secondAttribute="centerY" id="G4S-uO-MY0"/>
+                            <constraint firstItem="AEK-WZ-8Dq" firstAttribute="height" secondItem="ExR-w6-qUL" secondAttribute="height" id="mSq-qm-yfF"/>
+                            <constraint firstItem="AEK-WZ-8Dq" firstAttribute="centerX" secondItem="ExR-w6-qUL" secondAttribute="centerX" id="nqc-B8-ZM2"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ExR-w6-qUL"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="AEK-WZ-8Dq" id="frC-2y-UvD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nmL-JD-vBj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-474" y="4397"/>
+            <point key="canvasLocation" x="-2330" y="4612"/>
         </scene>
         <!--Inv ValuationVC-->
         <scene sceneID="sfX-4x-3md">
@@ -677,10 +679,10 @@
             </objects>
             <point key="canvasLocation" x="-1484" y="3896.4017991004503"/>
         </scene>
-        <!--Eureka! Rows Example-->
+        <!--Inv BasicVC-->
         <scene sceneID="XwE-6e-GkD">
             <objects>
-                <viewController storyboardIdentifier="InvBasicVC" title="Eureka! Rows Example" useStoryboardIdentifierAsRestorationIdentifier="YES" id="V6W-J7-SMM" customClass="InvBasicVC" customModule="cinventory" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="InvBasicVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="V6W-J7-SMM" customClass="InvBasicVC" customModule="cinventory" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Z2q-oF-B0N"/>
                         <viewControllerLayoutGuide type="bottom" id="DT2-gg-ezi"/>
