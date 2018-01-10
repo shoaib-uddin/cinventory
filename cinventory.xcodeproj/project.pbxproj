@@ -33,6 +33,8 @@
 		0A83AA001FEE580E00CB72F5 /* HomeTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A83A9FF1FEE580E00CB72F5 /* HomeTableVC.swift */; };
 		0A83AA021FEE585500CB72F5 /* NotificationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A83AA011FEE585500CB72F5 /* NotificationVC.swift */; };
 		0A83AA041FEE58CA00CB72F5 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A83AA031FEE58CA00CB72F5 /* SettingsVC.swift */; };
+		0A9E93581FF5792000CCDEB1 /* EnableEditOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9E93571FF5792000CCDEB1 /* EnableEditOverlay.swift */; };
+		0A9E935A1FF57A2600CCDEB1 /* EnableEditOverlay.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A9E93591FF57A2600CCDEB1 /* EnableEditOverlay.xib */; };
 		0A9ECB6B1FEF902B00E1F0BF /* InvOptionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9ECB6A1FEF902B00E1F0BF /* InvOptionsVC.swift */; };
 		0A9ECB6D1FEF908C00E1F0BF /* InvValuationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9ECB6C1FEF908C00E1F0BF /* InvValuationVC.swift */; };
 		0A9ECB6F1FEF910C00E1F0BF /* InvConditionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9ECB6E1FEF910C00E1F0BF /* InvConditionVC.swift */; };
@@ -158,6 +160,8 @@
 		0A9E93531FF433DB00CCDEB1 /* TextAreaRow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TextAreaRow.png; sourceTree = "<group>"; };
 		0A9E93551FF433DB00CCDEB1 /* FieldRowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldRowUITests.swift; sourceTree = "<group>"; };
 		0A9E93561FF433DB00CCDEB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A9E93571FF5792000CCDEB1 /* EnableEditOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnableEditOverlay.swift; sourceTree = "<group>"; };
+		0A9E93591FF57A2600CCDEB1 /* EnableEditOverlay.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EnableEditOverlay.xib; sourceTree = "<group>"; };
 		0A9ECB6A1FEF902B00E1F0BF /* InvOptionsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvOptionsVC.swift; sourceTree = "<group>"; };
 		0A9ECB6C1FEF908C00E1F0BF /* InvValuationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvValuationVC.swift; sourceTree = "<group>"; };
 		0A9ECB6E1FEF910C00E1F0BF /* InvConditionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvConditionVC.swift; sourceTree = "<group>"; };
@@ -225,6 +229,8 @@
 			children = (
 				0A2AE5751FEF0113000D0C1E /* BasicSubview.xib */,
 				0A2AE5771FEF013B000D0C1E /* BasicSubview.swift */,
+				0A9E93571FF5792000CCDEB1 /* EnableEditOverlay.swift */,
+				0A9E93591FF57A2600CCDEB1 /* EnableEditOverlay.xib */,
 			);
 			path = InvSubviews;
 			sourceTree = "<group>";
@@ -700,6 +706,7 @@
 				0AB16C301FED8C48000124F5 /* LaunchScreen.storyboard in Resources */,
 				0A6CD2B51FEEE94E00505C2F /* IconCVC.xib in Resources */,
 				0A6CD2A61FEE765A00505C2F /* InvListTVC.xib in Resources */,
+				0A9E935A1FF57A2600CCDEB1 /* EnableEditOverlay.xib in Resources */,
 				0AB16C2D1FED8C48000124F5 /* Assets.xcassets in Resources */,
 				5AA9B47D20061B2A0072B052 /* invOptionsExteriorChecklist.plist in Resources */,
 				0AB16C2B1FED8C48000124F5 /* Main.storyboard in Resources */,
@@ -810,6 +817,7 @@
 				0A83AA001FEE580E00CB72F5 /* HomeTableVC.swift in Sources */,
 				0A9ECB751FEF92F400E1F0BF /* InvPicturesVC.swift in Sources */,
 				0AB16C281FED8C48000124F5 /* ViewController.swift in Sources */,
+				0A9E93581FF5792000CCDEB1 /* EnableEditOverlay.swift in Sources */,
 				0AC3B48F1FF1927000AE54C0 /* InventoryVCCV.swift in Sources */,
 				0AB16C261FED8C48000124F5 /* AppDelegate.swift in Sources */,
 				0A2AE57F1FEF0F2A000D0C1E /* InvPageVC.swift in Sources */,
