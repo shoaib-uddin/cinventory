@@ -10,7 +10,7 @@ import UIKit
 import AVFoundation
 
 
-class QRScannerController: UIViewController {
+class QRScannerController: BaseViewController {
     
     // IBOutlets
     @IBOutlet var messageLabel:UILabel!

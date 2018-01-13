@@ -33,3 +33,12 @@ func colorWithHexString (_ hex:String) -> UIColor {
     
     return UIColor(red: CGFloat(r) / 255.0, green: CGFloat(g) / 255.0, blue: CGFloat(b) / 255.0, alpha: CGFloat(1))
 }
+
+func setHeaderColors(){
+    var navigationBarAppearace = UINavigationBar.appearance()
+    navigationBarAppearace.tintColor = colorWithHexString("#FFFFFF")
+    navigationBarAppearace.barTintColor = colorWithHexString("#000000");
+    navigationBarAppearace.tintColor = colorWithHexString("#FFFFFF");
+    navigationBarAppearace.titleTextAttributes = [NSAttributedStringKey.foregroundColor:UIColor.white];
+    
+}

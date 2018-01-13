@@ -199,9 +199,44 @@ class InvOptionsVC: FormViewController {
     
     fileprivate func setTechnologyOptions(){
         
+        for i in 1...self.collectionArray.count{
+            
+            form[i].forEach { (row) in
+                //
+                if(i % 2 == 0){
+                    row.baseValue = self.collectionArray[(row.indexPath?.row)!]["ID"];
+                }else{
+                    row.baseValue = nil
+                }
+                
+                //print(row.baseValue!);
+                
+            }
+            
+            
+        }
+        tableView.reloadData();
+        
     }
     
     fileprivate func setAdvanceOptions(){
+        
+        for i in 1...self.collectionArray.count{
+            
+            form[i].forEach { (row) in
+                //
+                if(i % 2 != 0){
+                    row.baseValue = self.collectionArray[(row.indexPath?.row)!]["ID"];
+                }else{
+                    row.baseValue = nil
+                }
+                //print(row.baseValue!);
+                
+            }
+            
+            
+        }
+        tableView.reloadData();
         
     }
     

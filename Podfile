@@ -18,7 +18,4 @@ pod 'ActionSheetPicker-3.0'
 pod 'CryptoSwift'
 pod 'Eureka'
 
-
 end
-
-

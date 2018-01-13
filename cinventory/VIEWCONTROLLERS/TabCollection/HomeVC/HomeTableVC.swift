@@ -9,21 +9,29 @@
 import Foundation
 import UIKit
 
+
+var GLobalHomeTableVC: HomeTableVC!;
+
 class HomeTableVC: BaseViewController {
     //
     // IBOutlets
     @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     // variables
     var invListModel: [InvListModel] = [InvListModel]();
     var refreshControl: UIRefreshControl!
     let searchController = UISearchController(searchResultsController: nil)
     var filterdinvListModel: [InvListModel] = [InvListModel]();
+    let screenSize : CGRect = UIScreen.main.bounds;
+    let window: UIWindow! = UIApplication.shared.delegate!.window!
+    
+    
     
     
     override func viewDidLoad() {
         //
+        GLobalHomeTableVC = self;
+        
         // initialize header buttons
         initHeaderBarItems();
         
@@ -64,6 +72,11 @@ class HomeTableVC: BaseViewController {
         super.viewWillDisappear(animated)
         searchController.dismiss(animated: false, completion: nil)
     }
+    
+    @IBAction func actionAddInv(_ sender: UIButton) {
+        self.openScanner();
+    }
+    
     
     
     

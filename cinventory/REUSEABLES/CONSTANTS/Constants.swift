@@ -32,3 +32,7 @@ struct settings
         
     }
 }
+
+func LangTrans(str : String) -> String{// Language Translate
+    return NSLocalizedString(str, comment: "");
+}

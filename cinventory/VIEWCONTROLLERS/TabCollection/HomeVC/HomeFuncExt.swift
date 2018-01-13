@@ -17,23 +17,24 @@ extension HomeTableVC : UISearchResultsUpdating{
         
         self.title = "Inventory";
         
-        // initialize top header buttons - sidemenu - select and ImageDropdown
-        let btnRight = UIBarButtonItem.init(title: "Signout", style: .plain, target: self, action: #selector(self.Signout(_:)));
-        
         let scanButtonImage = UIImage(named: "inventory-qrcode-navigation.png");
         let btnQrCode = UIBarButtonItem.init(image: scanButtonImage, style: .plain, target: self, action: #selector(self.scanInventoryByQrCode(_:)));
         btnQrCode.tintColor = UIColor.white;
         
-        self.navigationItem.rightBarButtonItems = [ btnQrCode , btnRight ]
+        self.navigationItem.rightBarButtonItems = [ btnQrCode ]
+        
+        let btnSidemenuImage = UIImage(named: "menu_btn.png");
+        let btnSidemenu = UIBarButtonItem.init(image: btnSidemenuImage, style: .plain, target: self, action: #selector(self.ShowMenu(_:)));
+        btnSidemenu.tintColor = UIColor.white;
+        
+        self.navigationItem.leftBarButtonItems = [ btnSidemenu ];
         
     }
     
-    // call from right most header button
-    @objc func Signout(_ sender: UIBarButtonItem){
-        // open selection of multiphoto select
+    // call from first most header button
+    @objc func ShowMenu(_ sender: UIBarButtonItem){
         
-        UserModel.setLoggedOutUser();
-        PageRedirect.redirectToLogin(view: self);
+        PageRedirect.openSidemenu(viewController: self);
         
         
     }
@@ -41,12 +42,16 @@ extension HomeTableVC : UISearchResultsUpdating{
     // call from right most header button
     @objc func scanInventoryByQrCode(_ sender: UIBarButtonItem){
         // open selection of multiphoto select
+        self.openScanner();
+        
+    }
+    
+    func openScanner(){
         if(self.invListModel.count == 0){
             UtilityHelper.AlertMessage("Please wait or load inventory list first");
         }else{
             PageRedirect.gotoCameraPreview(viewController: self, invListModel: self.invListModel);
         }
-        
     }
     
     // delegate function fo rsearch
@@ -86,7 +91,6 @@ extension HomeTableVC : UISearchResultsUpdating{
         let memberId = UserModel.GetInfo().MembershipId!;
         Inventory.getInvList(memberId) { (success, data) in
             //
-            self.activityIndicator.isHidden = true;
             if(success){
                 self.invListModel = data!;
                 // swap filter variable

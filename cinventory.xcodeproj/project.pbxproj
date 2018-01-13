@@ -63,11 +63,13 @@
 		0AC3B4911FF192C800AE54C0 /* InventoryVCinit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC3B4901FF192C800AE54C0 /* InventoryVCinit.swift */; };
 		0AC3B4931FF193E000AE54C0 /* InventoryVCViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC3B4921FF193E000AE54C0 /* InventoryVCViews.swift */; };
 		0AFF6BDE2006BCBE00F2F32A /* invOptionsChecklist.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0AFF6BDD2006BCBD00F2F32A /* invOptionsChecklist.plist */; };
+		0AFF6BED2008080200F2F32A /* SidemenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFF6BEC2008080200F2F32A /* SidemenuVC.swift */; };
+		0AFF6BF12008098A00F2F32A /* SidemenuParentTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFF6BEF2008098A00F2F32A /* SidemenuParentTVC.swift */; };
+		0AFF6BF22008098A00F2F32A /* SidemenuParentTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AFF6BF02008098A00F2F32A /* SidemenuParentTVC.xib */; };
+		0AFF6BF420080A0B00F2F32A /* MenuItems.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0AFF6BF320080A0A00F2F32A /* MenuItems.plist */; };
 		1675D57BC1F6489DD95FF858 /* Pods_cinventory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7504EAFB96A4FA922E841177 /* Pods_cinventory.framework */; };
 		5AA9B47520060F0B0072B052 /* CustomCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA9B47420060F0B0072B052 /* CustomCells.swift */; };
 		5AA9B47820060FD60072B052 /* FloatLabelTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA9B47720060FD60072B052 /* FloatLabelTextField.swift */; };
-		5AA9B47D20061B2A0072B052 /* invOptionsExteriorChecklist.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5AA9B47B20061B2A0072B052 /* invOptionsExteriorChecklist.plist */; };
-		5AA9B47E20061B2A0072B052 /* invOptionsGeneralChecklist.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5AA9B47C20061B2A0072B052 /* invOptionsGeneralChecklist.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -192,10 +194,12 @@
 		0AC3B4901FF192C800AE54C0 /* InventoryVCinit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryVCinit.swift; sourceTree = "<group>"; };
 		0AC3B4921FF193E000AE54C0 /* InventoryVCViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryVCViews.swift; sourceTree = "<group>"; };
 		0AFF6BDD2006BCBD00F2F32A /* invOptionsChecklist.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = invOptionsChecklist.plist; sourceTree = "<group>"; };
+		0AFF6BEC2008080200F2F32A /* SidemenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidemenuVC.swift; sourceTree = "<group>"; };
+		0AFF6BEF2008098A00F2F32A /* SidemenuParentTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SidemenuParentTVC.swift; sourceTree = "<group>"; };
+		0AFF6BF02008098A00F2F32A /* SidemenuParentTVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SidemenuParentTVC.xib; sourceTree = "<group>"; };
+		0AFF6BF320080A0A00F2F32A /* MenuItems.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MenuItems.plist; sourceTree = "<group>"; };
 		5AA9B47420060F0B0072B052 /* CustomCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCells.swift; sourceTree = "<group>"; };
 		5AA9B47720060FD60072B052 /* FloatLabelTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatLabelTextField.swift; sourceTree = "<group>"; };
-		5AA9B47B20061B2A0072B052 /* invOptionsExteriorChecklist.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = invOptionsExteriorChecklist.plist; sourceTree = "<group>"; };
-		5AA9B47C20061B2A0072B052 /* invOptionsGeneralChecklist.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = invOptionsGeneralChecklist.plist; sourceTree = "<group>"; };
 		5EEA1B543BCCF00626F76D2A /* Pods-cinventory.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cinventory.debug.xcconfig"; path = "Pods/Target Support Files/Pods-cinventory/Pods-cinventory.debug.xcconfig"; sourceTree = "<group>"; };
 		7504EAFB96A4FA922E841177 /* Pods_cinventory.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cinventory.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		97E7350DE5E0A48DE745AC61 /* Pods-cinventory.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cinventory.release.xcconfig"; path = "Pods/Target Support Files/Pods-cinventory/Pods-cinventory.release.xcconfig"; sourceTree = "<group>"; };
@@ -341,6 +345,7 @@
 		0A83AA071FEE724300CB72F5 /* TableViewCells */ = {
 			isa = PBXGroup;
 			children = (
+				0AFF6BEE2008098A00F2F32A /* Sidemenu */,
 				0A6CD2A31FEE765A00505C2F /* InvListTVC.swift */,
 				0A6CD2A41FEE765A00505C2F /* InvListTVC.xib */,
 			);
@@ -537,6 +542,7 @@
 		0AB16C371FED9558000124F5 /* VIEWCONTROLLERS */ = {
 			isa = PBXGroup;
 			children = (
+				0AFF6BE9200805A800F2F32A /* SidemenuVC */,
 				0A83A9F41FEE51E000CB72F5 /* BaseVC */,
 				0AB16C431FED9721000124F5 /* SplashVC */,
 				0AB16C421FED961B000124F5 /* AccountsVC */,
@@ -598,9 +604,8 @@
 			isa = PBXGroup;
 			children = (
 				0AB16C561FEDA50A000124F5 /* Constants.swift */,
+				0AFF6BF320080A0A00F2F32A /* MenuItems.plist */,
 				0AFF6BDD2006BCBD00F2F32A /* invOptionsChecklist.plist */,
-				5AA9B47C20061B2A0072B052 /* invOptionsGeneralChecklist.plist */,
-				5AA9B47B20061B2A0072B052 /* invOptionsExteriorChecklist.plist */,
 				0A6CD2AF1FEEDFC000505C2F /* invItems.plist */,
 			);
 			path = CONSTANTS;
@@ -613,6 +618,23 @@
 				0AB16C5B1FEDA8B8000124F5 /* AppModel.swift */,
 			);
 			path = MODELS;
+			sourceTree = "<group>";
+		};
+		0AFF6BE9200805A800F2F32A /* SidemenuVC */ = {
+			isa = PBXGroup;
+			children = (
+				0AFF6BEC2008080200F2F32A /* SidemenuVC.swift */,
+			);
+			path = SidemenuVC;
+			sourceTree = "<group>";
+		};
+		0AFF6BEE2008098A00F2F32A /* Sidemenu */ = {
+			isa = PBXGroup;
+			children = (
+				0AFF6BEF2008098A00F2F32A /* SidemenuParentTVC.swift */,
+				0AFF6BF02008098A00F2F32A /* SidemenuParentTVC.xib */,
+			);
+			path = Sidemenu;
 			sourceTree = "<group>";
 		};
 		3EDE020B97EE813279A05EF9 /* Frameworks */ = {
@@ -708,16 +730,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AFF6BF420080A0B00F2F32A /* MenuItems.plist in Resources */,
 				0AFF6BDE2006BCBE00F2F32A /* invOptionsChecklist.plist in Resources */,
 				0A2AE5761FEF0113000D0C1E /* BasicSubview.xib in Resources */,
 				0A6CD2BD1FEEF3E400505C2F /* invItems.plist in Resources */,
-				5AA9B47E20061B2A0072B052 /* invOptionsGeneralChecklist.plist in Resources */,
 				0AB16C301FED8C48000124F5 /* LaunchScreen.storyboard in Resources */,
 				0A6CD2B51FEEE94E00505C2F /* IconCVC.xib in Resources */,
 				0A6CD2A61FEE765A00505C2F /* InvListTVC.xib in Resources */,
+				0AFF6BF22008098A00F2F32A /* SidemenuParentTVC.xib in Resources */,
 				0A9E935A1FF57A2600CCDEB1 /* EnableEditOverlay.xib in Resources */,
 				0AB16C2D1FED8C48000124F5 /* Assets.xcassets in Resources */,
-				5AA9B47D20061B2A0072B052 /* invOptionsExteriorChecklist.plist in Resources */,
 				0AB16C2B1FED8C48000124F5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -791,7 +813,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -844,8 +866,10 @@
 				0AB16C4D1FED9FE3000124F5 /* ValidationHelper.swift in Sources */,
 				0A83A9FE1FEE54B800CB72F5 /* DashboardVC.swift in Sources */,
 				0AC3B4931FF193E000AE54C0 /* InventoryVCViews.swift in Sources */,
+				0AFF6BF12008098A00F2F32A /* SidemenuParentTVC.swift in Sources */,
 				0AB16C451FED9737000124F5 /* SplashVC.swift in Sources */,
 				0AB16C5A1FEDA78F000124F5 /* UserModel.swift in Sources */,
+				0AFF6BED2008080200F2F32A /* SidemenuVC.swift in Sources */,
 				0A9ECB6B1FEF902B00E1F0BF /* InvOptionsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1017,7 +1041,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BERNRJGAM5;
+				DEVELOPMENT_TEAM = K3YF8RZG3R;
 				INFOPLIST_FILE = cinventory/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pixcietechnologies.cinventorymt;
@@ -1033,7 +1057,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BERNRJGAM5;
+				DEVELOPMENT_TEAM = K3YF8RZG3R;
 				INFOPLIST_FILE = cinventory/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pixcietechnologies.cinventorymt;

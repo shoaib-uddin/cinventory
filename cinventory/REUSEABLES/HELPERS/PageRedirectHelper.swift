@@ -24,9 +24,10 @@ class PageRedirect {
         
         let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
         let destination = storyboard.instantiateViewController(withIdentifier: "LoginVC") as! LoginVC
-        view.navigationController?.present(destination, animated: true, completion: {
-            view.navigationController?.popViewController(animated: false);
-        })
+        view.present(destination, animated: true, completion: nil);
+//        view.navigationController?.present(destination, animated: true, completion: {
+//            view.navigationController?.dismissDetail();
+//        })
     }
     
     class func redirectToDashboard(view: UIViewController)
@@ -71,6 +72,7 @@ class PageRedirect {
     }
     
     
+    
     class func reverttoSplashPage(view: UIViewController){
         
         let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
@@ -89,6 +91,21 @@ class PageRedirect {
         let destination = storyboard.instantiateViewController(withIdentifier: "QRScannerController") as! QRScannerController
         destination.invListModel = invListModel;
         viewController.navigationController?.pushViewController(destination, animated: true);
+        
+    }
+    
+    class func openSidemenu(viewController: UIViewController){
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main);
+        let destination = storyboard.instantiateViewController(withIdentifier: "SideMenuVC2") as! SideMenuVC2
+        
+//        let transition = CATransition()
+//        transition.duration = 0.25
+//        transition.type = kCATransitionPush
+//        transition.subtype = kCATransitionFromLeft
+//        viewController.view.layer.add(transition, forKey: kCATransition)
+        
+        viewController.presentDetail(destination);
         
     }
     
