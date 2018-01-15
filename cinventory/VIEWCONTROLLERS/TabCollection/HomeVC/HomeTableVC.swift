@@ -8,7 +8,7 @@
 
 import Foundation
 import UIKit
-
+import ActionSheetPicker_3_0
 
 var GLobalHomeTableVC: HomeTableVC!;
 
@@ -66,6 +66,7 @@ class HomeTableVC: BaseViewController {
         loadData();
         
         
+        
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -74,7 +75,18 @@ class HomeTableVC: BaseViewController {
     }
     
     @IBAction func actionAddInv(_ sender: UIButton) {
-        self.openScanner();
+        
+        ActionSheetStringPicker.show(withTitle: "Chose Inventory", rows: ["Add Now","Add Later"], initialSelection: 1, doneBlock: { (picker, index, value) in
+            //
+            //print(picker, index, value);
+            self.openScanner(index);
+            
+        }, cancel: { (picker) in
+            //
+            
+        }, origin: sender)
+        
+        
     }
     
     

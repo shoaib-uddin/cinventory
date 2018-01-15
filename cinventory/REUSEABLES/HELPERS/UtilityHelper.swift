@@ -15,17 +15,35 @@ import AVFoundation
 class UtilityHelper
 {
     class func ShowLoader(_ title:String = "Loading") {
-        let window: UIWindow! = UIApplication.shared.keyWindow;
-        //MBProgressHUD.hideAllHUDs(for: window, animated: true)
-        let hud: MBProgressHUD = MBProgressHUD.showAdded(to: window, animated: true)
-        hud.label.text = title;
-        hud.show(animated: true);
+        
+        if ARSLineProgress.shown { return }
+        
+            ARSLineProgress.showWithPresentCompetionBlock { () -> Void in
+                print("Showed with completion block")
+            }
+        
+        
+        
+//        let window: UIWindow! = UIApplication.shared.keyWindow;
+//        //MBProgressHUD.hideAllHUDs(for: window, animated: true)
+//        let hud: MBProgressHUD = MBProgressHUD.showAdded(to: window, animated: true)
+//        hud.label.text = title;
+//        hud.show(animated: true);
         
     }
     
     class func HideLoader() {
-        let window: UIWindow! = UIApplication.shared.keyWindow
-        MBProgressHUD.hide(for: window, animated: true);
+        
+        if !ARSLineProgress.shown { return }
+        DispatchQueue.main.async {
+            ARSLineProgress.hideWithCompletionBlock({ () -> Void in
+                print("Hidden with completion block")
+            })
+        }
+        
+        
+//        let window: UIWindow! = UIApplication.shared.keyWindow
+//        MBProgressHUD.hide(for: window, animated: true);
     }
     
     class func AlertMessage(_ msg: String) {

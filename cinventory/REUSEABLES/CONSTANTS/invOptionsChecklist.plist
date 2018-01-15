@@ -9,18 +9,36 @@
 		<string>General Options</string>
 		<key>Data</key>
 		<array>
-			<dict>
-				<key>ID</key>
-				<string>0</string>
-				<key>Name</key>
-				<string> Air Conditioning</string>
-			</dict>
-			<dict>
-				<key>ID</key>
-				<string>1</string>
-				<key>Name</key>
-				<string>Alarm System</string>
-			</dict>
+			<string>Air Conditioning</string>
+			<string>Alarm System</string>
+			<string>Anti Lock Brakes</string>
+			<string>Audio Visual</string>
+			<string>Backup Camera</string>
+			<string>Bluetooth</string>
+			<string>Child Locks</string>
+			<string>Child Seat</string>
+			<string>Climate Control</string>
+			<string>Climate Control Panel</string>
+			<string>Driver Airbag</string>
+			<string>Front Side Airbag</string>
+			<string>Heated Seats</string>
+			<string>Heated Steering Wheel</string>
+			<string>Keyless Entry</string>
+			<string>Leather Seats</string>
+			<string>Memory Seats</string>
+			<string>Navigation</string>
+			<string>OnStar</string>
+			<string>Parking Sensors</string>
+			<string>Radio Controls</string>
+			<string>Rain Sensing Wipers</string>
+			<string>Rear Airbags</string>
+			<string>Side Airbags</string>
+			<string>SunRoof</string>
+			<string>Telescopic Steering</string>
+			<string>Third Row Seat</string>
+			<string>Trip Computer</string>
+			<string>Turn Signal Arms</string>
+			<string>Video Screen</string>
 		</array>
 	</dict>
 	<dict>
@@ -30,18 +48,19 @@
 		<string>Exterior Options</string>
 		<key>Data</key>
 		<array>
-			<dict>
-				<key>ID</key>
-				<string>0</string>
-				<key>Name</key>
-				<string>Alloy Wheels</string>
-			</dict>
-			<dict>
-				<key>ID</key>
-				<string>1</string>
-				<key>Name</key>
-				<string>Chrome Wheels</string>
-			</dict>
+			<string>Alloy Wheels</string>
+			<string>Chrome Wheels</string>
+			<string>Premium Wheels</string>
+			<string>Dome Lights</string>
+			<string>L RunningBoard</string>
+			<string>Moon Roof</string>
+			<string>Power Lift Gate</string>
+			<string>R RunningBoard</string>
+			<string>Rv Ladder</string>
+			<string>Sim Top</string>
+			<string>Tilt Wheel</string>
+			<string>Trailer Hitch</string>
+			<string>Trailer Hitch Conver</string>
 		</array>
 	</dict>
 	<dict>
@@ -51,18 +70,14 @@
 		<string>Audio Options</string>
 		<key>Data</key>
 		<array>
-			<dict>
-				<key>ID</key>
-				<string>0</string>
-				<key>Name</key>
-				<string> Am/Fm CD</string>
-			</dict>
-			<dict>
-				<key>ID</key>
-				<string>1</string>
-				<key>Name</key>
-				<string>Cassette Player</string>
-			</dict>
+			<string>Am/Fm CD</string>
+			<string>Cassette Player</string>
+			<string>CD Changer</string>
+			<string>CD Player</string>
+			<string>Radio</string>
+			<string>Stereo</string>
+			<string>Aux Ports</string>
+			<string>BT Audio</string>
 		</array>
 	</dict>
 	<dict>
@@ -72,18 +87,16 @@
 		<string>Power Options</string>
 		<key>Data</key>
 		<array>
-			<dict>
-				<key>ID</key>
-				<string>0</string>
-				<key>Name</key>
-				<string> Power Antenna</string>
-			</dict>
-			<dict>
-				<key>ID</key>
-				<string>1</string>
-				<key>Name</key>
-				<string>Power Brakes</string>
-			</dict>
+			<string>Power Antenna</string>
+			<string>Power Brakes</string>
+			<string>Power Driver Seat</string>
+			<string>Power Locks</string>
+			<string>Power Mirrors</string>
+			<string>Power Passenger Seat</string>
+			<string>Power Reclining Seats</string>
+			<string>Power Seats</string>
+			<string>Power Steering</string>
+			<string>Power Windows</string>
 		</array>
 	</dict>
 	<dict>
@@ -93,18 +106,17 @@
 		<string>Accessories Options</string>
 		<key>Data</key>
 		<array>
-			<dict>
-				<key>ID</key>
-				<string>0</string>
-				<key>Name</key>
-				<string>Bedliner</string>
-			</dict>
-			<dict>
-				<key>ID</key>
-				<string>1</string>
-				<key>Name</key>
-				<string>Center Tonneau</string>
-			</dict>
+			<string>Bedliner</string>
+			<string>Center Tonneau</string>
+			<string>4 x 4</string>
+			<string>Front Tonneau</string>
+			<string>Head Lamp Switch</string>
+			<string>Heads Up Display</string>
+			<string>Instrument Panel</string>
+			<string>Rear Tonneau</string>
+			<string>Steering Wheel Audio</string>
+			<string>Tonneau Cover</string>
+			<string>Traction</string>
 		</array>
 	</dict>
 </array>

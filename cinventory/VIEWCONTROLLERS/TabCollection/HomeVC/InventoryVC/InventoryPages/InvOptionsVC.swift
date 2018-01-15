@@ -17,8 +17,6 @@ class InvOptionsVC: FormViewController {
     
     // variables
     var collectionArray: [[String:Any]] = [[ : ]];
-    var collectionArrayGeneral: [[String:Any]] = [[ : ]];
-    var collectionArrayExterior: [[String:Any]] = [[ : ]];
     let continents = ["All", "Basic", "Technology", "Advance", "None"]
     
     override func viewDidLoad() {
@@ -59,11 +57,11 @@ class InvOptionsVC: FormViewController {
             
             form +++ SelectableSection<ImageCheckRow<String>>(self.collectionArray[i]["Name"] as! String, selectionType: .multipleSelection)
             
-            let array = self.collectionArray[i]["Data"] as! [[ String : Any ]];
+            let array = self.collectionArray[i]["Data"] as! [ String ];
             for j in 0..<array.count{
                 
-                let name = array[j]["Name"] as! String;
-                let id = array[j]["ID"] as! String;
+                let name = String(describing: array[j]);
+                let id = String(describing: j);
                 
                 //print(name, id);
                 form.last! <<< ImageCheckRow<String>(name){ lrow in
@@ -83,40 +81,6 @@ class InvOptionsVC: FormViewController {
         }
        
         
-            
-//            form +++ SelectableSection<ImageCheckRow<String>>("General Options", selectionType: .multipleSelection)
-//            self.collectionArrayGeneral = UtilityHelper.getPlistContent(name: "invOptionsGeneralChecklist");
-//            for option in self.collectionArrayGeneral {
-//                let name = option["Name"] as! String;
-//                let id = option["ID"] as! String;
-//
-//                form.last! <<< ImageCheckRow<String>(name){ lrow in
-//                lrow.title = name
-//                lrow.selectableValue = id
-//                lrow.value = nil
-//                }.cellSetup { cell, _ in
-//                    cell.trueImage = UIImage(named: "selectedRectangle")!
-//                    cell.falseImage = UIImage(named: "unselectedRectangle")!
-//                    cell.accessoryType = .checkmark
-//                }
-//            }
-//
-//            form +++ SelectableSection<ImageCheckRow<String>>("Exterior Options", selectionType: .multipleSelection)
-//            self.collectionArrayGeneral = UtilityHelper.getPlistContent(name: "invOptionsExteriorChecklist");
-//            for option in self.collectionArrayGeneral {
-//                let name = option["Name"] as! String;
-//                let id = option["ID"] as! String;
-//
-//                form.last! <<< ImageCheckRow<String>(name){ lrow in
-//                    lrow.title = name
-//                    lrow.selectableValue = id
-//                    lrow.value = nil
-//                    }.cellSetup { cell, _ in
-//                        cell.trueImage = UIImage(named: "selectedRectangle")!
-//                        cell.falseImage = UIImage(named: "unselectedRectangle")!
-//                        cell.accessoryType = .checkmark
-//                }
-//            }
         
             
         
@@ -157,8 +121,8 @@ class InvOptionsVC: FormViewController {
             
             form[i].forEach { (row) in
                 //
-                row.baseValue = self.collectionArray[(row.indexPath?.row)!]["ID"];
-                //print(row.baseValue!);
+                row.baseValue = "\(String(describing: row.indexPath?.row))";
+                print(row.baseValue!);
                 
             }
             
@@ -203,8 +167,8 @@ class InvOptionsVC: FormViewController {
             
             form[i].forEach { (row) in
                 //
-                if(i % 2 == 0){
-                    row.baseValue = self.collectionArray[(row.indexPath?.row)!]["ID"];
+                if((row.indexPath?.row)! % 2 == 0){
+                    row.baseValue = "\(String(describing: row.indexPath?.row))";
                 }else{
                     row.baseValue = nil
                 }
@@ -225,8 +189,8 @@ class InvOptionsVC: FormViewController {
             
             form[i].forEach { (row) in
                 //
-                if(i % 2 != 0){
-                    row.baseValue = self.collectionArray[(row.indexPath?.row)!]["ID"];
+                if((row.indexPath?.row)! % 2 != 0){
+                    row.baseValue = "\(String(describing: row.indexPath?.row))";
                 }else{
                     row.baseValue = nil
                 }

@@ -47,6 +47,29 @@ class InvListModel: EVObject
     var PurchasePrice: NSNumber!
 }
 
+class InvCostModel: EVObject
+{
+    var id: NSNumber?
+    var InvDate: String? = ""
+    var ExpenseType: String? = ""
+    var Vendor: String? = ""
+    var VendorInvNo: String? = ""
+    var RefNo: String? = ""
+    var InvAmount: String? = ""
+    var OneTimePay: String? = ""
+    var PayAmount: String? = ""
+    var PayType: String? = ""
+    var PayDate: String? = ""
+    var PaidBy: String? = ""
+    var InvBalance: NSNumber = 0
+    var InvImage: String? = ""
+    var Note: String? = ""
+    var Actions: String? = ""
+    var Debit: NSNumber = 0
+    var Credit: NSNumber = 0
+    
+}
+
 class EnInventoryBasicTab: EVObject
 {
     var Id: NSNumber?

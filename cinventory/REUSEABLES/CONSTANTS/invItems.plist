@@ -3,18 +3,6 @@
 <plist version="1.0">
 <array>
 	<dict>
-		<key>ImagePathSelected</key>
-		<string>edit_boarders_btn.png</string>
-		<key>selected</key>
-		<false/>
-		<key>Name</key>
-		<string>Options</string>
-		<key>KeyIndex</key>
-		<string>OPT</string>
-		<key>Type</key>
-		<string>subview</string>
-	</dict>
-	<dict>
 		<key>selected</key>
 		<false/>
 		<key>ImagePathSelected</key>
@@ -35,6 +23,18 @@
 		<string>Cost</string>
 		<key>KeyIndex</key>
 		<string>CST</string>
+		<key>Type</key>
+		<string>subview</string>
+	</dict>
+	<dict>
+		<key>ImagePathSelected</key>
+		<string>edit_boarders_btn.png</string>
+		<key>selected</key>
+		<false/>
+		<key>Name</key>
+		<string>Options</string>
+		<key>KeyIndex</key>
+		<string>OPT</string>
 		<key>Type</key>
 		<string>subview</string>
 	</dict>

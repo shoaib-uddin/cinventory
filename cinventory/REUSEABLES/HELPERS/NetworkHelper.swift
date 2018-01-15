@@ -78,7 +78,9 @@ class NetworkHelper {
         
         
         //let req = UtilityHelper.CreateRequest("POST", Url: Url);
-        
+        if(showLoader){
+            UtilityHelper.ShowLoader();
+        }
         
         
         //Alamofire.request(req as! URLRequestConvertible)
@@ -107,9 +109,9 @@ class NetworkHelper {
                     print(data)
                     
                     success?(data.ToString() as AnyObject);
-//                    if(showLoader){
-//                        UtilityHelper.HideLoader();
-//                    }
+                    if(showLoader){
+                        UtilityHelper.HideLoader();
+                    }
 //                    let jsonDict : NSDictionary =   (JSON as AnyObject).ToDictionary()! as NSDictionary;
 //                    let data = jsonDict.object(forKey: "Data") as! NSArray;
 //

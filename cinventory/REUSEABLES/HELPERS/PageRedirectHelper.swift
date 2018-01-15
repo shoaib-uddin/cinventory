@@ -85,11 +85,12 @@ class PageRedirect {
         
     }
     
-    class func gotoCameraPreview(viewController: UIViewController, invListModel: [InvListModel]){
+    class func gotoCameraPreview(viewController: UIViewController, invListModel: [InvListModel], index: Int){
         
         let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main);
         let destination = storyboard.instantiateViewController(withIdentifier: "QRScannerController") as! QRScannerController
         destination.invListModel = invListModel;
+        destination.selectIndex = index;
         viewController.navigationController?.pushViewController(destination, animated: true);
         
     }

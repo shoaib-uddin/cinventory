@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Name</key>
+		<string>Price Ranges</string>
+		<key>Data</key>
+		<array>
+			<string>Low Price</string>
+			<string>Medium Price</string>
+			<string>High Price</string>
+		</array>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>Search Params</string>
+		<key>Data</key>
+		<array>
+			<string>Search Radius</string>
+			<string>Market Day Supply</string>
+			<string>Like Mine</string>
+			<string>Overall Supply</string>
+			<string>Price Rank	</string>
+			<string>Specific Rank</string>
+			<string>Cost to Market%</string>
+			<string>Price to Market%</string>
+		</array>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>KBB</string>
+		<key>Data</key>
+		<array>
+			<string>Zip</string>
+			<string>Trade</string>
+			<string>Private</string>
+			<string>Retail</string>
+			<string>CPO</string>
+		</array>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>NADA</string>
+		<key>Data</key>
+		<array>
+			<string>Zip</string>
+			<string>Rough Trade</string>
+			<string>Clean Private</string>
+			<string>Retail</string>
+			<string>CPO</string>
+		</array>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>MRR</string>
+		<key>Data</key>
+		<array>
+			<string>Zip</string>
+			<string>Below</string>
+			<string>Average</string>
+			<string>Above</string>
+			<string>Retail</string>
+		</array>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>BB</string>
+		<key>Data</key>
+		<array>
+			<string>Zip</string>
+			<string>Below</string>
+			<string>Average</string>
+			<string>Above</string>
+			<string>Retail</string>
+		</array>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>EDMUNDS</string>
+		<key>Data</key>
+		<array>
+			<string>Zip</string>
+			<string>Trade</string>
+			<string>Private</string>
+			<string>Retail</string>
+			<string>CPO</string>
+		</array>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>Misc</string>
+		<key>Data</key>
+		<array>
+			<string>Zip</string>
+			<string>Rough Trade</string>
+			<string>Clean Trade</string>
+			<string>Retail</string>
+			<string>CPO</string>
+		</array>
+	</dict>
+</array>
+</plist>

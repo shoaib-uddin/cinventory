@@ -22,6 +22,7 @@ class QRScannerController: BaseViewController {
     var videoPreviewLayer: AVCaptureVideoPreviewLayer?
     var qrCodeFrameView: UIView?
     var invListModel: [InvListModel] = [InvListModel]();
+    var selectIndex: Int = 3;
     
     private let supportedCodeTypes = [AVMetadataObject.ObjectType.upce,
                                       AVMetadataObject.ObjectType.code39,
@@ -41,7 +42,6 @@ class QRScannerController: BaseViewController {
         super.viewDidLoad()
         
         // Get the back-facing camera for capturing videos
-        //let deviceDiscoverySession = AVCaptureDevice.DiscoverySession(deviceTypes: [.builtInDualCamera], mediaType: AVMediaType.video, position: .back)
         
         let deviceDiscoverySession = AVCaptureDevice.DiscoverySession(deviceTypes: [AVCaptureDevice.DeviceType.builtInWideAngleCamera], mediaType: AVMediaType.video, position: AVCaptureDevice.Position.back)
         
@@ -107,12 +107,38 @@ class QRScannerController: BaseViewController {
     
     func launchScreen(decodedVin: String) {
         
+        
         if let i = invListModel.first(where: { $0.vin == decodedVin} ){
             self.stopCaptureSession();
             PageRedirect.redirectToSingleViewFromQR(view: self, inv: i);
         }else{
+            
+            switch selectIndex {
+            case 0:
+                //
+                let inv = InvListModel();
+                inv.vin = decodedVin;
+                PageRedirect.redirectToSingleInv(view: self, inv: inv);
+                break;
+            case 1:
+                //
+                let inv = InvListModel();
+                inv.vin = decodedVin;
+                PageRedirect.redirectToSingleInv(view: self, inv: inv);
+                break;
+            default:
+                break
+            }
+            
             self.messageLabel.text = "NO VIN FOUND";
         }
+        
+        
+        
+        
+        
+        
+        
         
         
     }

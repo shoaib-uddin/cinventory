@@ -42,15 +42,15 @@ extension HomeTableVC : UISearchResultsUpdating{
     // call from right most header button
     @objc func scanInventoryByQrCode(_ sender: UIBarButtonItem){
         // open selection of multiphoto select
-        self.openScanner();
+        self.openScanner(3);
         
     }
     
-    func openScanner(){
+    func openScanner(_ int: Int){
         if(self.invListModel.count == 0){
             UtilityHelper.AlertMessage("Please wait or load inventory list first");
         }else{
-            PageRedirect.gotoCameraPreview(viewController: self, invListModel: self.invListModel);
+            PageRedirect.gotoCameraPreview(viewController: self, invListModel: self.invListModel, index: int);
         }
     }
     
