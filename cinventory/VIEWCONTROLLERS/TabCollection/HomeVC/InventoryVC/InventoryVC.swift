@@ -58,7 +58,8 @@ class InventoryVC: BaseViewController {
         
         if let invView = Bundle.main.loadNibNamed("InvListTVC", owner: self, options: nil)?.first as? InvListTVC{
             invView.setData(inv: invListModel);
-            invView.frame = CGRect(x: 0, y: 0, width: InvSingleView.frame.width, height: InvSingleView.frame.height);
+            invView.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: InvSingleView.frame.height);
+            
             self.InvSingleView.addSubview(invView);
         }
         

@@ -24,6 +24,19 @@ class InvCostVC: UIViewController {
         lblOriginalPrice.text = "Actual Cost: 12358.28";
         lblProjectedPrice.text = "Projected Cost: 784.28";
         
+        let nibname = "InvCostTVC";
+        let nib = UINib(nibName: nibname, bundle: nil);
+        tableView.register(nib, forCellReuseIdentifier: nibname)
+        
+        tableView.delegate = self
+        tableView.dataSource = self
+        
+        // table Styles
+        tableView.estimatedRowHeight = 400;
+        tableView.tableFooterView = UIView(frame: CGRect.zero)
+        tableView.backgroundView?.backgroundColor = UIColor.clear;
+        tableView.backgroundColor = UIColor.clear
+        
     }
     
     
@@ -34,22 +47,23 @@ extension InvCostVC : UITableViewDelegate, UITableViewDataSource{
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
-    
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.filterdinvListModel.count
+        return 6
     }
-    
+
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100.0
+        return 180.0
     }
-    
+
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        PageRedirect.redirectToSingleInv(view: self, inv: self.filterdinvListModel[indexPath.row])
+        //
     }
-    
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "InvListTVC", for: indexPath) as! InvListTVC
-        cell.setData(inv: self.filterdinvListModel[indexPath.row]);
+        let cell = tableView.dequeueReusableCell(withIdentifier: "InvCostTVC", for: indexPath) as! InvCostTVC
+        cell.setData(index: indexPath.row);
         return cell
     }
 }
+

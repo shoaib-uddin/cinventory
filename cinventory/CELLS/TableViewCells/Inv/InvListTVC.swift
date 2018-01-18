@@ -40,13 +40,13 @@ class InvListTVC: UITableViewCell {
     
     func setData(inv: InvListModel){
         
-        
-        lblDataArray[0].text = "\(inv.actualLocation!)";
-        lblDataArray[1].text = "Stock # \(inv.stockNo!)";
-        lblDataArray[2].text = "Model # \(inv.model!)";
-        lblDataArray[3].text = "Age: \(inv.vechicleAge!)";
-        lblDataArray[4].text = "Year: \(inv.year!)";
-        lblDataArray[5].text = "VIN: \(inv.vin!)";
+        lblDataArray[0].text = "ID - \(inv.id!)";
+        lblDataArray[1].text = "\(inv.actualLocation!)";
+        lblDataArray[2].text = "Stock # \(inv.stockNo!)";
+        lblDataArray[3].text = "Model # \(inv.model!)";
+        lblDataArray[4].text = "Age: \(inv.vechicleAge!)";
+        lblDataArray[5].text = "Year: \(inv.year!)";
+        lblDataArray[6].text = "VIN: \(inv.vin!)";
         
         
         

@@ -23,13 +23,12 @@
 		0A395699200C02A4004C23CA /* ARSProgressLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A39568F200C02A3004C23CA /* ARSProgressLoader.swift */; };
 		0A39569A200C02A4004C23CA /* ARSStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A395690200C02A3004C23CA /* ARSStatus.swift */; };
 		0A39569C200CD5C4004C23CA /* invValuationChecklist.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A39569B200CD5C4004C23CA /* invValuationChecklist.plist */; };
-		0A39569F200D39EF004C23CA /* InvCostTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A39569D200D39EF004C23CA /* InvCostTVC.swift */; };
-		0A3956A0200D39EF004C23CA /* InvCostTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A39569E200D39EF004C23CA /* InvCostTVC.xib */; };
+		0A3956A620108024004C23CA /* InvCostTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3956A220108024004C23CA /* InvCostTVC.swift */; };
+		0A3956A720108024004C23CA /* InvCostTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A3956A320108024004C23CA /* InvCostTVC.xib */; };
+		0A3956A820108024004C23CA /* InvListTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3956A420108024004C23CA /* InvListTVC.swift */; };
+		0A3956A920108024004C23CA /* InvListTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A3956A520108024004C23CA /* InvListTVC.xib */; };
 		0A61DA531FF7A72100452352 /* QRScannerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A61DA521FF7A72100452352 /* QRScannerController.swift */; };
-		0A6CD2A51FEE765A00505C2F /* InvListTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6CD2A31FEE765A00505C2F /* InvListTVC.swift */; };
-		0A6CD2A61FEE765A00505C2F /* InvListTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A6CD2A41FEE765A00505C2F /* InvListTVC.xib */; };
 		0A6CD2A81FEE854400505C2F /* HomeTableExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6CD2A71FEE854400505C2F /* HomeTableExt.swift */; };
-		0A6CD2A91FEE88FC00505C2F /* InvListTVC.xib in Sources */ = {isa = PBXBuildFile; fileRef = 0A6CD2A41FEE765A00505C2F /* InvListTVC.xib */; };
 		0A6CD2AB1FEEC9F600505C2F /* HomeFuncExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6CD2AA1FEEC9F600505C2F /* HomeFuncExt.swift */; };
 		0A6CD2AE1FEED2B600505C2F /* InventoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6CD2AD1FEED2B600505C2F /* InventoryVC.swift */; };
 		0A6CD2B41FEEE94E00505C2F /* IconCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6CD2B21FEEE94E00505C2F /* IconCVC.swift */; };
@@ -102,11 +101,11 @@
 		0A39568F200C02A3004C23CA /* ARSProgressLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARSProgressLoader.swift; sourceTree = "<group>"; };
 		0A395690200C02A3004C23CA /* ARSStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARSStatus.swift; sourceTree = "<group>"; };
 		0A39569B200CD5C4004C23CA /* invValuationChecklist.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = invValuationChecklist.plist; sourceTree = "<group>"; };
-		0A39569D200D39EF004C23CA /* InvCostTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvCostTVC.swift; sourceTree = "<group>"; };
-		0A39569E200D39EF004C23CA /* InvCostTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InvCostTVC.xib; sourceTree = "<group>"; };
+		0A3956A220108024004C23CA /* InvCostTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvCostTVC.swift; sourceTree = "<group>"; };
+		0A3956A320108024004C23CA /* InvCostTVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InvCostTVC.xib; sourceTree = "<group>"; };
+		0A3956A420108024004C23CA /* InvListTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvListTVC.swift; sourceTree = "<group>"; };
+		0A3956A520108024004C23CA /* InvListTVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InvListTVC.xib; sourceTree = "<group>"; };
 		0A61DA521FF7A72100452352 /* QRScannerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScannerController.swift; sourceTree = "<group>"; };
-		0A6CD2A31FEE765A00505C2F /* InvListTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvListTVC.swift; sourceTree = "<group>"; };
-		0A6CD2A41FEE765A00505C2F /* InvListTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InvListTVC.xib; sourceTree = "<group>"; };
 		0A6CD2A71FEE854400505C2F /* HomeTableExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableExt.swift; sourceTree = "<group>"; };
 		0A6CD2AA1FEEC9F600505C2F /* HomeFuncExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFuncExt.swift; sourceTree = "<group>"; };
 		0A6CD2AD1FEED2B600505C2F /* InventoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryVC.swift; sourceTree = "<group>"; };
@@ -300,6 +299,17 @@
 			path = ARSLoader;
 			sourceTree = "<group>";
 		};
+		0A3956A120108024004C23CA /* Inv */ = {
+			isa = PBXGroup;
+			children = (
+				0A3956A220108024004C23CA /* InvCostTVC.swift */,
+				0A3956A320108024004C23CA /* InvCostTVC.xib */,
+				0A3956A420108024004C23CA /* InvListTVC.swift */,
+				0A3956A520108024004C23CA /* InvListTVC.xib */,
+			);
+			path = Inv;
+			sourceTree = "<group>";
+		};
 		0A6CD2AC1FEED2A700505C2F /* InventoryVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -388,11 +398,8 @@
 		0A83AA071FEE724300CB72F5 /* TableViewCells */ = {
 			isa = PBXGroup;
 			children = (
+				0A3956A120108024004C23CA /* Inv */,
 				0AFF6BEE2008098A00F2F32A /* Sidemenu */,
-				0A6CD2A31FEE765A00505C2F /* InvListTVC.swift */,
-				0A6CD2A41FEE765A00505C2F /* InvListTVC.xib */,
-				0A39569D200D39EF004C23CA /* InvCostTVC.swift */,
-				0A39569E200D39EF004C23CA /* InvCostTVC.xib */,
 			);
 			path = TableViewCells;
 			sourceTree = "<group>";
@@ -778,14 +785,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				0AFF6BF420080A0B00F2F32A /* MenuItems.plist in Resources */,
+				0A3956A920108024004C23CA /* InvListTVC.xib in Resources */,
 				0AFF6BDE2006BCBE00F2F32A /* invOptionsChecklist.plist in Resources */,
+				0A3956A720108024004C23CA /* InvCostTVC.xib in Resources */,
 				0A2AE5761FEF0113000D0C1E /* BasicSubview.xib in Resources */,
-				0A3956A0200D39EF004C23CA /* InvCostTVC.xib in Resources */,
 				0A39569C200CD5C4004C23CA /* invValuationChecklist.plist in Resources */,
 				0A6CD2BD1FEEF3E400505C2F /* invItems.plist in Resources */,
 				0AB16C301FED8C48000124F5 /* LaunchScreen.storyboard in Resources */,
 				0A6CD2B51FEEE94E00505C2F /* IconCVC.xib in Resources */,
-				0A6CD2A61FEE765A00505C2F /* InvListTVC.xib in Resources */,
 				0AFF6BF22008098A00F2F32A /* SidemenuParentTVC.xib in Resources */,
 				0A9E935A1FF57A2600CCDEB1 /* EnableEditOverlay.xib in Resources */,
 				0AB16C2D1FED8C48000124F5 /* Assets.xcassets in Resources */,
@@ -874,7 +881,6 @@
 			files = (
 				0A9ECB771FEF932700E1F0BF /* InvFilesVC.swift in Sources */,
 				0A6CD2B61FEEE9A000505C2F /* IconCVC.xib in Sources */,
-				0A6CD2A91FEE88FC00505C2F /* InvListTVC.xib in Sources */,
 				0A83AA041FEE58CA00CB72F5 /* SettingsVC.swift in Sources */,
 				0AB16C4F1FEDA023000124F5 /* UtilityHelper.swift in Sources */,
 				0A83AA021FEE585500CB72F5 /* NotificationVC.swift in Sources */,
@@ -884,10 +890,8 @@
 				0A395694200C02A4004C23CA /* ARSLineProgressCustomization.swift in Sources */,
 				0A7345411FEDBC0C00FF4F1C /* ExtensionHelper.swift in Sources */,
 				0A2AE57D1FEF0D5D000D0C1E /* InvCostVC.swift in Sources */,
-				0A6CD2A51FEE765A00505C2F /* InvListTVC.swift in Sources */,
 				0A6CD2AB1FEEC9F600505C2F /* HomeFuncExt.swift in Sources */,
 				0A395693200C02A4004C23CA /* ARSLineProgressConstants.swift in Sources */,
-				0A39569F200D39EF004C23CA /* InvCostTVC.swift in Sources */,
 				0A9ECB6D1FEF908C00E1F0BF /* InvValuationVC.swift in Sources */,
 				0A6CD2A81FEE854400505C2F /* HomeTableExt.swift in Sources */,
 				0A395696200C02A4004C23CA /* ARSLineProgressHelpers.swift in Sources */,
@@ -915,6 +919,7 @@
 				0A61DA531FF7A72100452352 /* QRScannerController.swift in Sources */,
 				0AB16C5C1FEDA8B8000124F5 /* AppModel.swift in Sources */,
 				0A395699200C02A4004C23CA /* ARSProgressLoader.swift in Sources */,
+				0A3956A620108024004C23CA /* InvCostTVC.swift in Sources */,
 				0A395695200C02A4004C23CA /* ARSLineProgressExtensions.swift in Sources */,
 				0AB16C521FEDA358000124F5 /* InventoryApi.swift in Sources */,
 				0A6CD2AE1FEED2B600505C2F /* InventoryVC.swift in Sources */,
@@ -931,6 +936,7 @@
 				0A395692200C02A4004C23CA /* ARSLineProgress.swift in Sources */,
 				0AFF6BED2008080200F2F32A /* SidemenuVC.swift in Sources */,
 				0A9ECB6B1FEF902B00E1F0BF /* InvOptionsVC.swift in Sources */,
+				0A3956A820108024004C23CA /* InvListTVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
