@@ -44,7 +44,10 @@ class InvListTVC: UITableViewCell {
         lblDataArray[1].text = "\(inv.actualLocation!)";
         lblDataArray[2].text = "Stock # \(inv.stockNo!)";
         lblDataArray[3].text = "Model # \(inv.model!)";
-        lblDataArray[4].text = "Age: \(inv.vechicleAge!)";
+        
+        lblDataArray[4].text = "Age: \(inv.vechicleAge ?? 0)";
+        
+        
         lblDataArray[5].text = "Year: \(inv.year!)";
         lblDataArray[6].text = "VIN: \(inv.vin!)";
         

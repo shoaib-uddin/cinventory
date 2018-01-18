@@ -183,24 +183,24 @@ class InvBasicVC: FormViewController {
                     to.dismissOnChange = true
                 }
             
-            <<< PushRow<String>() {
-                $0.title = "Doors"
-                $0.options = data.Doors.map { $0.Name! }
-                $0.value = returnNameOfDropdown(obj: data.Doors, id: data.DoorId)
-                $0.selectorTitle = "Choose Doors"
-                $0.disabled = Condition.function(["editingTag"], { form in
-                    return !((form.rowBy(tag: "editingTag") as? SwitchRow)?.value ?? false)
-                })
-                }.onPresent { from, to in
-                    to.dismissOnSelection = true
-                    to.dismissOnChange = true
-                }
+//            <<< PushRow<String>() {
+//                $0.title = "Doors"
+//                $0.options = data.Doors.map { $0.Name! }
+//                $0.value = returnNameOfDropdown(obj: data.Doors, id: data.DoorId)
+//                $0.selectorTitle = "Choose Doors"
+//                $0.disabled = Condition.function(["editingTag"], { form in
+//                    return !((form.rowBy(tag: "editingTag") as? SwitchRow)?.value ?? false)
+//                })
+//                }.onPresent { from, to in
+//                    to.dismissOnSelection = true
+//                    to.dismissOnChange = true
+//                }
             
-            <<< IntRow() { $0.title = "Cylenders"; $0.value = Int(truncating: data.Cylenders)
-                $0.disabled = Condition.function(["editingTag"], { form in
-                    return !((form.rowBy(tag: "editingTag") as? SwitchRow)?.value ?? false)
-                })
-            }
+//            <<< IntRow() { $0.title = "Cylenders"; $0.value = Int(truncating: data.Cylenders)
+//                $0.disabled = Condition.function(["editingTag"], { form in
+//                    return !((form.rowBy(tag: "editingTag") as? SwitchRow)?.value ?? false)
+//                })
+//            }
             
             +++ Section()
             

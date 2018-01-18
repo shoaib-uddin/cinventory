@@ -22,13 +22,31 @@ extension InventoryVC{
                 
             }
             self.invBasicVC = sb.instantiateViewController(withIdentifier: "InvBasicVC") as! InvBasicVC
-            Inventory.getInvBasicTabData(self.loggedInModel.MembershipId!, invId: Int(truncating: self.invListModel.id!), completion: { (success, basicTabData) in
-                //
-                print("DATA BASIC");
-                self.invBasicVC.setData(data: (basicTabData?.first)!);
-                self.addControlerToView(controller: self.invBasicVC);
+            
+            if(self.newRecord){
                 
-            })
+                print("DATA BASIC");
+                if(self.enInventoryBasicTab != nil){
+                    self.invBasicVC.setData(data: self.enInventoryBasicTab);
+                    self.addControlerToView(controller: self.invBasicVC);
+                }else{
+                    UtilityHelper.AlertMessagewithCallBack("Something went wrong", success: {
+                        self.navigationController?.popViewController(animated: true);
+                    })
+                }
+                
+                
+            }else{
+                
+                Inventory.getInvBasicTabData(self.loggedInModel.MembershipId!, invId: Int(truncating: self.invListModel.id!), completion: { (success, basicTabData) in
+                    //
+                    self.invBasicVC.setData(data: (basicTabData?.first)!);
+                    self.addControlerToView(controller: self.invBasicVC);
+                    
+                })
+                
+            }
+            
             
             break
         case "CST":

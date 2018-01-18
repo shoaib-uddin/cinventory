@@ -85,7 +85,7 @@ class Inventory{
         
     }
     
-    class func getVinInfoData(_ membershipId: String, vin: Int, completion: @escaping (_ callback: Bool, _ data: [EnInventoryBasicTab]?) -> Void){
+    class func getVinInfoData(_ membershipId: String, vin: String, completion: @escaping (_ callback: Bool, _ data: [EnInventoryBasicTab]?) -> Void){
         
         // Post Model Create
         let post = "membershipId=\(membershipId)&vin=\(vin)";

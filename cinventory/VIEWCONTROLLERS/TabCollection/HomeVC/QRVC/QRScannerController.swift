@@ -22,7 +22,7 @@ class QRScannerController: BaseViewController {
     var videoPreviewLayer: AVCaptureVideoPreviewLayer?
     var qrCodeFrameView: UIView?
     var invListModel: [InvListModel] = [InvListModel]();
-    var selectIndex: Int = 3;
+    var selectIndex: Int = 0;
     
     private let supportedCodeTypes = [AVMetadataObject.ObjectType.upce,
                                       AVMetadataObject.ObjectType.code39,
@@ -107,30 +107,17 @@ class QRScannerController: BaseViewController {
     
     func launchScreen(decodedVin: String) {
         
+        self.stopCaptureSession();
         
         if let i = invListModel.first(where: { $0.vin == decodedVin} ){
-            self.stopCaptureSession();
-            PageRedirect.redirectToSingleViewFromQR(view: self, inv: i);
+            PageRedirect.redirectToSingleViewFromQR(view: self, inv: i, index: selectIndex);
         }else{
-            
-            switch selectIndex {
-            case 0:
-                //
-                let inv = InvListModel();
-                inv.vin = decodedVin;
-                PageRedirect.redirectToSingleInv(view: self, inv: inv);
-                break;
-            case 1:
-                //
-                let inv = InvListModel();
-                inv.vin = decodedVin;
-                PageRedirect.redirectToSingleInv(view: self, inv: inv);
-                break;
-            default:
-                break
-            }
-            
             self.messageLabel.text = "NO VIN FOUND";
+            let inv = InvListModel();
+            inv.vin = decodedVin;
+            PageRedirect.redirectToSingleViewFromQR(view: self, inv: inv, index: selectIndex);
+            
+            
         }
         
         

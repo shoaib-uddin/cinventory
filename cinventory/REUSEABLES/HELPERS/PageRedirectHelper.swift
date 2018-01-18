@@ -46,7 +46,19 @@ class PageRedirect {
         
     }
     
-    class func redirectToSingleViewFromQR(view: UIViewController, inv: InvListModel){
+    class func redirectToSingleInvWithBasicData(view: UIViewController, inv: InvListModel, basicData: EnInventoryBasicTab){
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        let destination = storyboard.instantiateViewController(withIdentifier: "InventoryVC") as! InventoryVC
+        destination.invListModel = inv;
+        destination.newRecord = true;
+        destination.enInventoryBasicTab = basicData;
+        view.navigationController?.pushViewController(destination, animated: true)
+        
+        
+    }
+    
+    class func redirectToSingleViewFromQR(view: UIViewController, inv: InvListModel, index: Int){
         
         var controller: UIViewController!;
         
@@ -63,7 +75,12 @@ class PageRedirect {
             view.navigationController?.popToViewController(controller, animated: true);
             let controller = controller as! HomeTableVC;
             
-            PageRedirect.redirectToSingleInv(view: controller, inv: inv);
+            if(index == 0 || index == 1){
+                controller.loadNewInvFromBasicData(index: index, inv: inv);
+            }else{
+                PageRedirect.redirectToSingleInv(view: controller, inv: inv);
+            }
+            
             
         }else{
             view.navigationController?.popViewController(animated: true);

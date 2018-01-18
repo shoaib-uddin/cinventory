@@ -26,7 +26,7 @@ class InventoryVC: BaseViewController {
     var selectedCellIndex: IndexPath! = IndexPath(row: 0, section: 0);
     var enInventoryBasicTab: EnInventoryBasicTab!;
     var loggedInModel: LoggedInModel = UserModel.GetInfo();
-    
+    var newRecord: Bool = false;
     
     // view controllers variables
     var invBasicVC: InvBasicVC!;
@@ -62,6 +62,12 @@ class InventoryVC: BaseViewController {
             
             self.InvSingleView.addSubview(invView);
         }
+        
+    }
+    
+    func initBasicTab(_ basicData: EnInventoryBasicTab){
+        
+        
         
     }
     

@@ -109,4 +109,59 @@ extension HomeTableVC : UISearchResultsUpdating{
         }
     }
     
+    
+    func loadNewInvFromBasicData(index: Int, inv: InvListModel){
+        
+        
+        Inventory.getVinInfoData(UserModel.GetInfo().MembershipId!, vin: inv.vin!) { (success, basicData) in
+            
+            if(!success){
+                UtilityHelper.AlertMessage("VIN Data fetch Erorr");
+                return;
+            }else{
+                
+                let new_inv = InvListModel();
+                if let data = (basicData as! [EnInventoryBasicTab]).first{
+                    new_inv.id = data.Id;
+                    new_inv.vin = data.Vin;
+                    new_inv.make = data.Make;
+                    new_inv.model = data.Model;
+                    new_inv.year = data.Year;
+                    new_inv.actualLocation = data.ActualLocation;
+                    new_inv.milesIn = data.MilesIn;
+                    
+                    PageRedirect.redirectToSingleInvWithBasicData(view: self, inv: new_inv, basicData: data);
+                }else{
+                    UtilityHelper.AlertMessage("Nothing Found");
+                };
+                
+                
+            
+            }
+            
+            
+            
+            
+            
+            
+            
+        }
+        
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }
